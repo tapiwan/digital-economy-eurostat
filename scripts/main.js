@@ -3,6 +3,7 @@
     //Initialize
     (function init() {
         initFullPage();
+        centerMenu();
     })();
 
     //Initialize fullPage plugin
@@ -21,6 +22,17 @@
                 'sources'
             ],
             menu: '#menu'
+        });
+    }
+
+    //Center menu vertically
+    function centerMenu() {
+        var $menu = $('#menu');
+            $menuHeight = $menu.height();
+
+        $menu.css({
+            "top": "50%",
+            "margin-top": -($menuHeight/2)
         });
     }
 

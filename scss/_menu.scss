@@ -1,13 +1,15 @@
 #menu {
     position: fixed;
-    right: 0;
-    top: 0;
+    right: 130px;
+    top: 50%;
 
     ul {
+        padding-left: 0;
+
         li {
             list-style: none;
             position: relative;
-            margin-top: 10px;
+            margin-top: 6px;
 
             &:first-child {
                 margin-top: 0;
@@ -18,14 +20,18 @@
                 display: block;
                 height: 30px;
                 width: 30px;
-                background: url('../images/menu-default.png') no-repeat;
-                background-size: 30px;
+                border-radius: 30px;
+                background-color: $blackgrey;
             }
 
             //Link-Buttons active
             &.active {
                 a {
-                    background-image: url('../images/menu-active.png');
+                    background-color: $green;
+
+                    &.blue {
+                        background-color: $blue;
+                    }
                 }
             }
 
@@ -44,6 +50,18 @@
                     background-color: white;
                     padding: 5px 10px;
                     font-size: 12px;
+                    word-break: keep-all;
+
+                    &:after {
+                        position: absolute;
+                        content:"";
+                        width:0;
+                        height:0;
+                        border-top:7px solid transparent;
+                        border-bottom:7px solid transparent;
+                        border-left:7px solid white;
+                        right: -7px;
+                    }
                 }
             }
         }

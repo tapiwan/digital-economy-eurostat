@@ -6049,32 +6049,46 @@ html.fp-enabled,
 
 #menu {
   position: fixed;
-  right: 0;
-  top: 0; }
-  #menu ul li {
-    list-style: none;
-    position: relative;
-    margin-top: 10px; }
-    #menu ul li:first-child {
-      margin-top: 0; }
-    #menu ul li a {
-      display: block;
-      height: 30px;
-      width: 30px;
-      background: url("../images/menu-default.png") no-repeat;
-      background-size: 30px; }
-    #menu ul li.active a {
-      background-image: url("../images/menu-active.png"); }
-    #menu ul li .name {
-      display: none; }
-    #menu ul li:hover .name {
-      display: block;
-      position: absolute;
-      right: 40px;
-      top: 0;
-      background-color: white;
-      padding: 5px 10px;
-      font-size: 12px; }
+  right: 130px;
+  top: 50%; }
+  #menu ul {
+    padding-left: 0; }
+    #menu ul li {
+      list-style: none;
+      position: relative;
+      margin-top: 6px; }
+      #menu ul li:first-child {
+        margin-top: 0; }
+      #menu ul li a {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        background-color: #333; }
+      #menu ul li.active a {
+        background-color: #A0D468; }
+        #menu ul li.active a.blue {
+          background-color: #4FC1E9; }
+      #menu ul li .name {
+        display: none; }
+      #menu ul li:hover .name {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 0;
+        background-color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        word-break: keep-all; }
+        #menu ul li:hover .name:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          border-left: 7px solid white;
+          right: -7px; }
 
 .section-lightgrey {
   background-color: #E6E9ED; }
@@ -6090,3 +6104,6 @@ html.fp-enabled,
 
 .section-sources {
   background-color: #434A54; }
+
+#intro {
+  width: 1700px; }

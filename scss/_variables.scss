@@ -1,5 +1,11 @@
-$section-lightgrey: #E6E9ED;
-$section-darkgrey: #CCD1D9;
-$section-blue: #4FC1E9;
-$section-green: #A0D468;
+$lightgrey: #E6E9ED;
+$darkgrey: #CCD1D9;
+$blackgrey: #333;
+$blue: #4FC1E9;
+$green: #A0D468;
+
+$section-lightgrey: $lightgrey;
+$section-darkgrey: $darkgrey;
+$section-blue: $blue;
+$section-green: $green;
 $section-sources: #434A54;
