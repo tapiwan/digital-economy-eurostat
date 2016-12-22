@@ -1,0 +1,17 @@
+{
+  "name": "digital-economy-eurostat",
+  "version": "1.0.0",
+  "description": "Package Dependencies",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
