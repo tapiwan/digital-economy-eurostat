@@ -1,5 +1,21 @@
 .section {
-    &-grey {
-        background-color: $section-grey;
+    &-lightgrey {
+        background-color: $section-lightgrey;
+    }
+
+    &-darkgrey {
+        background-color: $section-darkgrey;
+    }
+
+    &-blue {
+        background-color: $section-blue;
+    }
+
+    &-green {
+        background-color: $section-green;
+    }
+
+    &-sources {
+        background-color: $section-sources;
     }
 }
