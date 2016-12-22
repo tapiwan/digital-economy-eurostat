@@ -4,16 +4,21 @@ var gulp    = require('gulp'),
     notify  = require('gulp-notify');
 
 //###################
-//# BUILD
+//# DEFAULT TASK
 //###################
-gulp.task('build', ['build:scss']);
+gulp.task('default', ['watch']);
 
 //###################
-//# WATCH
+//# WATCH TASK
 //###################
 gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['build:scss']);
 });
+
+//###################
+//# BUILD TASK
+//###################
+gulp.task('build', ['build:scss']);
 
 //###################
 //# BUILD:SCSS
