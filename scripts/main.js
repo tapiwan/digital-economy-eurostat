@@ -8,8 +8,19 @@
     //Initialize fullPage plugin
     function initFullPage() {
         $('#fullpage').fullpage({
-            navigation: true,
-            navigationPosition: 'right'
+            anchors: [
+                'development-of-digital-economy',
+                'use-of-mobile-devices',
+                'enterprises-use-of-e-business',
+                'importance-of-social-media',
+                'uses-of-social-media',
+                'icts-influence-on-e-commerce',
+                'turnover-of-e-sales',
+                'b2b-b2c-by-countries',
+                'employment-of-ict-specialists',
+                'sources'
+            ],
+            menu: '#menu'
         });
     }
 
