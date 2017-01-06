@@ -24,6 +24,7 @@ h4,
 h5,
 h6 {
     font-family: $font-headings;
+    margin: 5px 0;
 }
 
 h1 { font-size: $h1-size; }
@@ -84,4 +85,11 @@ h4 { font-size: $h4-size; }
         width: (100/$grid-columns)*$i#{'%'};
         @extend %col;
     }
+}
+
+/**
+ * Intro picture
+ */
+#intro {
+    width: 100%;
 }
