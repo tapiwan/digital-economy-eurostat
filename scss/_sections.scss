@@ -1,21 +1,46 @@
 .section {
     &-lightgrey {
         background-color: $section-lightgrey;
+        color: $color-default;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color-default;
+        }
     }
 
     &-darkgrey {
         background-color: $section-darkgrey;
+        color: $color-default;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color-default;
+        }
     }
 
     &-blue {
         background-color: $section-blue;
+        color: $color-inverted;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color-inverted;
+        }
     }
 
     &-green {
         background-color: $section-green;
+        color: $color-default;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color-default;
+        }
     }
 
     &-sources {
         background-color: $section-sources;
+        color: $color-inverted;
+
+        h1,h2,h3,h4,h5,h6 {
+            color: $color-inverted;
+        }
     }
 }

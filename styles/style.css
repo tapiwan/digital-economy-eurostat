@@ -6066,9 +6066,10 @@ html.fp-enabled,
         border-radius: 30px;
         background-color: #333; }
       #menu ul li.active a {
-        background-color: #A0D468; }
+        background-color: #B3D490;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }
         #menu ul li.active a.blue {
-          background-color: #4FC1E9; }
+          background-color: #A3D7E9; }
       #menu ul li .name {
         display: none; }
       #menu ul li:hover .name {
@@ -6091,19 +6092,34 @@ html.fp-enabled,
           right: -7px; }
 
 .section-lightgrey {
-  background-color: #E6E9ED; }
+  background-color: #E6E9ED;
+  color: #434A54; }
+  .section-lightgrey h1, .section-lightgrey h2, .section-lightgrey h3, .section-lightgrey h4, .section-lightgrey h5, .section-lightgrey h6 {
+    color: #434A54; }
 
 .section-darkgrey {
-  background-color: #CCD1D9; }
+  background-color: #CCD1D9;
+  color: #434A54; }
+  .section-darkgrey h1, .section-darkgrey h2, .section-darkgrey h3, .section-darkgrey h4, .section-darkgrey h5, .section-darkgrey h6 {
+    color: #434A54; }
 
 .section-blue {
-  background-color: #4FC1E9; }
+  background-color: #A3D7E9;
+  color: #FFFFFF; }
+  .section-blue h1, .section-blue h2, .section-blue h3, .section-blue h4, .section-blue h5, .section-blue h6 {
+    color: #FFFFFF; }
 
 .section-green {
-  background-color: #A0D468; }
+  background-color: #B3D490;
+  color: #434A54; }
+  .section-green h1, .section-green h2, .section-green h3, .section-green h4, .section-green h5, .section-green h6 {
+    color: #434A54; }
 
 .section-sources {
-  background-color: #434A54; }
+  background-color: #434A54;
+  color: #FFFFFF; }
+  .section-sources h1, .section-sources h2, .section-sources h3, .section-sources h4, .section-sources h5, .section-sources h6 {
+    color: #FFFFFF; }
 
 #intro {
   width: 1700px; }
