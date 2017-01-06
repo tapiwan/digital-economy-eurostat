@@ -1,17 +1,29 @@
-//Main colors
-$lightgrey: #E6E9ED;
-$darkgrey: #CCD1D9;
-$blackgrey: #333;
-$blue: #A3D7E9;
-$green: #B3D490;
+//Widths
+$container-width: 1000px;
+$grid-columns: 12;
 
-//Section backgrounds
-$section-lightgrey: $lightgrey;
-$section-darkgrey: $darkgrey;
-$section-blue: $blue;
-$section-green: $green;
-$section-sources: #434A54;
+//Global colors
+$green: #A0D468;
+$green-pastel: #B3D490;
 
-//Text colors
-$color-default: #434A54;
-$color-inverted: #FFFFFF;
+$blue: #4FC1E9;
+$blue-pastel: #A3D7E9;
+
+$grey-darkest: #333333;
+$grey-dark: #434A54;
+$grey-light: #656D78;
+$grey-cable: #9FABBD;
+$grey-lighter: #CCD1D9;
+$grey-lightest: #E6E9ED;
+
+$white: #FFFFFF;
+
+//Fonts
+$font-fallback: Helvetica, Arial, sans-serif;
+$font-headings: "Roboto Slab", "Roboto", $font-fallback;
+$font-text: "Roboto", $font-fallback;
+
+$h1-size: 65px;
+$h2-size: 40px;
+$h3-size: 24px;
+$h4-size: 18px;

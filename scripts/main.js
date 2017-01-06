@@ -10,8 +10,8 @@
     function initFullPage() {
         $('#fullpage').fullpage({
             anchors: [
-                'development-of-digital-economy',
-                'use-of-mobile-devices',
+                'digital-economy-in-europe',
+                'enterprises-connected-to-the-internet',
                 'enterprises-use-of-e-business',
                 'importance-of-social-media',
                 'uses-of-social-media',

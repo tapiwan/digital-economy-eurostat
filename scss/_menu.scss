@@ -1,3 +1,6 @@
+/**************************
+ * Menu
+ **************************/
 #menu {
     position: fixed;
     right: 130px;
@@ -21,7 +24,7 @@
                 height: 30px;
                 width: 30px;
                 border-radius: 30px;
-                background-color: $blackgrey;
+                background-color: $grey-darkest;
             }
 
             //Link-Buttons active

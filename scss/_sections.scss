@@ -1,46 +1,25 @@
+/**************************
+ * Sections
+ **************************/
 .section {
     &-lightgrey {
-        background-color: $section-lightgrey;
-        color: $color-default;
-
-        h1,h2,h3,h4,h5,h6 {
-            color: $color-default;
-        }
+        background-color: $grey-lightest;
     }
 
     &-darkgrey {
-        background-color: $section-darkgrey;
-        color: $color-default;
-
-        h1,h2,h3,h4,h5,h6 {
-            color: $color-default;
-        }
+        background-color: $grey-lighter;
     }
 
     &-blue {
-        background-color: $section-blue;
-        color: $color-inverted;
-
-        h1,h2,h3,h4,h5,h6 {
-            color: $color-inverted;
-        }
+        background-color: $blue-pastel;
     }
 
     &-green {
-        background-color: $section-green;
-        color: $color-default;
-
-        h1,h2,h3,h4,h5,h6 {
-            color: $color-default;
-        }
+        background-color: $green-pastel;
     }
 
     &-sources {
-        background-color: $section-sources;
-        color: $color-inverted;
+        background-color: $grey-dark;
 
-        h1,h2,h3,h4,h5,h6 {
-            color: $color-inverted;
-        }
     }
 }

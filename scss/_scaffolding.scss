@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,500,700');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/**************************
+ * Body
+ **************************/
+body {
+    font-family: $font-text;
+    color: $grey-dark;
+}
+
+/**************************
+ * Headings
+ **************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-headings;
+}
+
+h1 { font-size: $h1-size; }
+h2 { font-size: $h2-size; }
+h3 { font-size: $h3-size; }
+h4 { font-size: $h4-size; }
+
+/**************************
+ * Text
+ **************************/
+.text-dark {
+    color: $grey-dark;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $grey-dark;
+    }
+}
+
+.text-light {
+    color: $white;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $white;
+    }
+}
+
+/**************************
+ * Containers
+ **************************/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ /**************************
+  * Grid
+  **************************/
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &:after,
+    &:before {
+        clear: both;
+        display: table;
+        content: " ";
+    }
+}
+
+%col {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: (100/$grid-columns)*$i#{'%'};
+        @extend %col;
+    }
+}
