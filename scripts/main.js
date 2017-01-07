@@ -4,6 +4,7 @@
     (function init() {
         initFullPage();
         centerMenu();
+        initPillars();
     })();
 
     //Initialize fullPage plugin
@@ -33,6 +34,15 @@
         $menu.css({
             "top": "50%",
             "margin-top": -($menuHeight/2)
+        });
+    }
+
+    function initPillars() {
+        var $pillars = $('.pillar-wrapper');
+
+        //Give each pillar the right height
+        $pillars.find('.pillar').each(function() {
+            $(this).height($(this).data('height')*3);
         });
     }
 

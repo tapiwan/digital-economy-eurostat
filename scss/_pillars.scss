@@ -1,0 +1,53 @@
+/**************************
+ * Pillars
+ **************************/
+.pillar-wrapper {
+    text-align: center;
+
+    .pillar {
+        &-green {
+            background-color: $green-pastel;
+            color: $grey-darkest;
+        }
+
+        &-blue {
+            background-color: $blue-pastel;
+            color: $grey-darkest;
+        }
+
+        &-grey {
+            background-color: $grey-darkest;
+            color: $white;
+        }
+
+        .percentage {
+            font-size: 35px;
+        }
+    }
+
+    .description {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .tooltip {
+        display: none;
+        background-color: $grey-dark;
+        color: white;
+        padding: 10px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content:"";
+            width:0;
+            height:0;
+            border-right:7px solid transparent;
+            border-bottom:7px solid $grey-dark;
+            border-left:7px solid transparent;
+            top: -7px;
+            left: 50%;
+            margin-left: -3.5px;
+        }
+    }
+}
