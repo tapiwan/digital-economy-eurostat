@@ -17,13 +17,18 @@
         //Set counters to their start value
         g.$counters = $('[data-counter]');
         g.$counters.each(function() {
-            $(this).html($(this).data('start'));
+            var $this = $(this);
+
+            $this.html($this.data('start'));
         });
 
         //Set pillars to their start value
         g.$pillars = $('[data-pillar]');
         g.$pillars.each(function() {
-            
+            var $this = $(this),
+                $number = $this.find('.number');
+
+            $number.html($this.data('start'));
         });
     }
 
@@ -135,6 +140,29 @@
 
     function initSectionThree() {
         if(!g.sectionThreeLoaded) {
+
+            g.$pillars.each(function() {
+                var $this = $(this),
+                    $start = $this.data('start'),
+                    $end  = $this.data('end'),
+                    $number = $this.find('.number');
+
+                //Animate pillars growing
+                var interval = setInterval(function() {
+                    if($start <= $end) {
+                        $this.height($start++*3);
+                        $number.html($start++);
+                    }
+                    else {
+                        clearInterval(interval);
+                    }
+                }, 10);
+
+                //Tooltip toggling
+                $this.next('.description').click(function() {
+                    $(this).next('.tooltip').fadeToggle();
+                });
+            });
 
             g.sectionThreeLoaded = true;
         }
