@@ -1,0 +1,51 @@
+/**************************
+ * Circles
+ **************************/
+.circle {
+    border-radius: 100%;
+    width: 270px;
+    height: 270px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    &-grey {
+        background-color: $grey-lightest;
+        color: $grey-dark;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .text-big {
+        font-size: 55px;
+        font-weight: 300;
+        margin: 0 0 10px 0;
+    }
+
+    .text-medium {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .text-small {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .text-xtra-small {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .text-column {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
