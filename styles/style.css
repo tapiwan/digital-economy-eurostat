@@ -241,7 +241,14 @@ html.fp-enabled,
  **************************/
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #434A54; }
+  color: #333333;
+  font-size: 16px; }
+
+/**************************
+ * Paragraphs
+ **************************/
+p {
+  line-height: 1.75em; }
 
 /**************************
  * Headings
@@ -271,9 +278,9 @@ h4 {
  * Text
  **************************/
 .text-dark {
-  color: #434A54; }
+  color: #333333; }
   .text-dark h1, .text-dark h2, .text-dark h3, .text-dark h4, .text-dark h5, .text-dark h6 {
-    color: #434A54; }
+    color: #333333; }
 
 .text-light {
   color: #FFFFFF; }
@@ -1813,11 +1820,11 @@ h4 {
         border-radius: 30px;
         background-color: #333333; }
       #menu ul li.active a {
-        background-color: #FFFFFF;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
-        /*&.blue {
-                        background-color: $blue;
-                    }*/ }
+        background-color: #B3D490;
+        border: 2px solid #FFFFFF; }
+        #menu ul li.active a.white {
+          background-color: #FFFFFF;
+          border: 2px solid #434A54; }
       #menu ul li .name {
         display: none; }
       #menu ul li:hover .name {
@@ -1878,16 +1885,20 @@ h4 {
   .circle .text-big {
     font-size: 55px;
     font-weight: 300;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    line-height: 1em; }
   .circle .text-medium {
     font-size: 35px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1em; }
   .circle .text-small {
     margin: 0;
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1.25em; }
   .circle .text-xtra-small {
     margin: 0;
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 1.25em; }
   .circle .text-columnized {
     width: 80px;
     display: block;
