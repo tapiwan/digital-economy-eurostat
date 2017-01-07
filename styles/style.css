@@ -1888,7 +1888,7 @@ h4 {
   .circle .text-xtra-small {
     margin: 0;
     font-size: 12px; }
-  .circle .text-column {
+  .circle .text-columnized {
     width: 80px;
     display: block;
     margin: 0 auto;
