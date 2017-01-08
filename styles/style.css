@@ -242,7 +242,8 @@ html.fp-enabled,
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #333333;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
 
 /**************************
  * Paragraphs
@@ -1826,6 +1827,24 @@ h4 {
   font-size: 12px;
   line-height: 1.25em; }
 
+.text-bold {
+  font-weight: 700; }
+
+.text-regular {
+  font-weight: 400; }
+
+.text-light {
+  font-weight: 200; }
+
+.text-blue {
+  color: #A3D7E9; }
+
+.text-green {
+  color: #B3D490; }
+
+.text-white {
+  color: #FFFFFF; }
+
 /**************************
  * Menu
  **************************/
@@ -1915,6 +1934,73 @@ h4 {
     margin: 0 auto;
     text-align: left; }
 
+.circle-media-types {
+  position: relative; }
+  .circle-media-types .inner-circle {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: table; }
+    .circle-media-types .inner-circle > p {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+    .circle-media-types .inner-circle .corner {
+      background-color: #434A54;
+      border: 15px solid #E6E9ED;
+      border-radius: 100%;
+      width: 130px;
+      height: 130px;
+      position: absolute;
+      display: table; }
+      .circle-media-types .inner-circle .corner .mini-corner {
+        background-color: #434A54;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        display: table;
+        right: -30px;
+        top: -10px; }
+        .circle-media-types .inner-circle .corner .mini-corner span {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center; }
+      .circle-media-types .inner-circle .corner .category {
+        position: absolute;
+        width: 300px; }
+      .circle-media-types .inner-circle .corner > p {
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center; }
+      .circle-media-types .inner-circle .corner-top-left {
+        left: -30px;
+        top: -30px; }
+        .circle-media-types .inner-circle .corner-top-left .category {
+          top: -45px;
+          left: -135px; }
+      .circle-media-types .inner-circle .corner-top-right {
+        right: -30px;
+        top: -30px; }
+        .circle-media-types .inner-circle .corner-top-right .category {
+          top: -45px;
+          left: -100px; }
+      .circle-media-types .inner-circle .corner-bottom-left {
+        left: -30px;
+        bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-left .category {
+          bottom: -45px;
+          left: -100px; }
+      .circle-media-types .inner-circle .corner-bottom-right {
+        right: -30px;
+        bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-right .category {
+          bottom: -45px;
+          left: -100px; }
+
 /**************************
  * Pillars
  **************************/
@@ -1932,7 +2018,6 @@ h4 {
   .pillar-wrapper .pillar .percentage {
     font-size: 35px; }
   .pillar-wrapper .description {
-    margin: 0;
     cursor: pointer; }
   .pillar-wrapper .tooltip {
     display: none;

@@ -84,3 +84,27 @@
     font-size: 12px;
     line-height: 1.25em;
 }
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-light {
+    font-weight: 200;
+}
+
+.text-blue {
+    color: $blue-pastel;
+}
+
+.text-green {
+    color: $green-pastel;
+}
+
+.text-white {
+    color: $white;
+}
