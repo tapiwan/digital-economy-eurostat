@@ -40,7 +40,6 @@
                 'enterprises-connected-to-the-internet',
                 'enterprises-use-of-e-business',
                 'enterprises-using-social-media',
-                'uses-of-social-media',
                 'icts-influence-on-e-commerce',
                 'turnover-of-e-sales',
                 'e-sales-by-type-of-customer',
@@ -79,9 +78,6 @@
                         break;
                     case 9:
                         initSectionNine();
-                        break;
-                    case 10:
-                        initSectionTen();
                         break;
 
                 }
@@ -207,13 +203,6 @@
         if(!g.sectionNineLoaded) {
 
             g.sectionNineLoaded = true;
-        }
-    }
-
-    function initSectionTen() {
-        if(!g.sectionTenLoaded) {
-
-            g.sectionTenLoaded = true;
         }
     }
 
