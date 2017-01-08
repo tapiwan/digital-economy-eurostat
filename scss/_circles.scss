@@ -39,6 +39,10 @@
         height: 400px;
         margin: 0 auto;
         display: table;
+        background-image: url("../images/inner-circle.png");
+        background-repeat: no-repeat;
+        background-size: 365px;
+        background-position: center center;
 
         > p {
             display: table-cell;

@@ -1943,7 +1943,11 @@ h4 {
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    display: table; }
+    display: table;
+    background-image: url("../images/inner-circle.png");
+    background-repeat: no-repeat;
+    background-size: 365px;
+    background-position: center center; }
     .circle-media-types .inner-circle > p {
       display: table-cell;
       text-align: center;
