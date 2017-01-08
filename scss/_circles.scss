@@ -9,6 +9,11 @@
     display: table-cell;
     vertical-align: middle;
 
+    &-small {
+        width: 140px;
+        height: 140px;
+    }
+
     &-grey {
         background-color: $grey-lightest;
         color: $grey-dark;
@@ -33,7 +38,7 @@
 
     .inner-circle {
         position: relative;
-        background-color: $white;
+        background-color: $grey-lightest;
         border-radius: 100%;
         width: 400px;
         height: 400px;
@@ -48,11 +53,17 @@
             display: table-cell;
             text-align: center;
             vertical-align: middle;
+            position: relative;
+            top: -13px;
+
+            a {
+                color: $grey-dark;
+            }
         }
 
         .corner {
             background-color: $grey-dark;
-            border: 15px solid $grey-lightest;
+            border: 15px solid $grey-lighter;
             border-radius: 100%;
             width: 130px;
             height: 130px;
@@ -69,6 +80,7 @@
                 right: -30px;
                 top: -10px;
 
+                //Percentage in mini-corner
                 span {
                     display: table-cell;
                     vertical-align: middle;
@@ -81,6 +93,7 @@
                 width: 300px;
             }
 
+            //Text & percentage in corner
             > p {
                 vertical-align: middle;
                 display: table-cell;

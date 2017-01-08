@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-@for $i from 1 through 60 {
+@for $i from 1 through 120 {
     .margin-top-#{$i} {
         margin-top: $i#{px};
     }
@@ -98,13 +98,17 @@
 }
 
 .text-blue {
-    color: $blue-pastel;
+    color: $blue-pastel !important;
 }
 
 .text-green {
-    color: $green-pastel;
+    color: $green-pastel !important;
 }
 
 .text-white {
-    color: $white;
+    color: $white !important;
+}
+
+.text-centered {
+    text-align: center !important;
 }

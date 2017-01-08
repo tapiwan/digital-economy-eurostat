@@ -540,6 +540,186 @@ h4 {
 .margin-top-60 {
   margin-top: 60px; }
 
+.margin-top-61 {
+  margin-top: 61px; }
+
+.margin-top-62 {
+  margin-top: 62px; }
+
+.margin-top-63 {
+  margin-top: 63px; }
+
+.margin-top-64 {
+  margin-top: 64px; }
+
+.margin-top-65 {
+  margin-top: 65px; }
+
+.margin-top-66 {
+  margin-top: 66px; }
+
+.margin-top-67 {
+  margin-top: 67px; }
+
+.margin-top-68 {
+  margin-top: 68px; }
+
+.margin-top-69 {
+  margin-top: 69px; }
+
+.margin-top-70 {
+  margin-top: 70px; }
+
+.margin-top-71 {
+  margin-top: 71px; }
+
+.margin-top-72 {
+  margin-top: 72px; }
+
+.margin-top-73 {
+  margin-top: 73px; }
+
+.margin-top-74 {
+  margin-top: 74px; }
+
+.margin-top-75 {
+  margin-top: 75px; }
+
+.margin-top-76 {
+  margin-top: 76px; }
+
+.margin-top-77 {
+  margin-top: 77px; }
+
+.margin-top-78 {
+  margin-top: 78px; }
+
+.margin-top-79 {
+  margin-top: 79px; }
+
+.margin-top-80 {
+  margin-top: 80px; }
+
+.margin-top-81 {
+  margin-top: 81px; }
+
+.margin-top-82 {
+  margin-top: 82px; }
+
+.margin-top-83 {
+  margin-top: 83px; }
+
+.margin-top-84 {
+  margin-top: 84px; }
+
+.margin-top-85 {
+  margin-top: 85px; }
+
+.margin-top-86 {
+  margin-top: 86px; }
+
+.margin-top-87 {
+  margin-top: 87px; }
+
+.margin-top-88 {
+  margin-top: 88px; }
+
+.margin-top-89 {
+  margin-top: 89px; }
+
+.margin-top-90 {
+  margin-top: 90px; }
+
+.margin-top-91 {
+  margin-top: 91px; }
+
+.margin-top-92 {
+  margin-top: 92px; }
+
+.margin-top-93 {
+  margin-top: 93px; }
+
+.margin-top-94 {
+  margin-top: 94px; }
+
+.margin-top-95 {
+  margin-top: 95px; }
+
+.margin-top-96 {
+  margin-top: 96px; }
+
+.margin-top-97 {
+  margin-top: 97px; }
+
+.margin-top-98 {
+  margin-top: 98px; }
+
+.margin-top-99 {
+  margin-top: 99px; }
+
+.margin-top-100 {
+  margin-top: 100px; }
+
+.margin-top-101 {
+  margin-top: 101px; }
+
+.margin-top-102 {
+  margin-top: 102px; }
+
+.margin-top-103 {
+  margin-top: 103px; }
+
+.margin-top-104 {
+  margin-top: 104px; }
+
+.margin-top-105 {
+  margin-top: 105px; }
+
+.margin-top-106 {
+  margin-top: 106px; }
+
+.margin-top-107 {
+  margin-top: 107px; }
+
+.margin-top-108 {
+  margin-top: 108px; }
+
+.margin-top-109 {
+  margin-top: 109px; }
+
+.margin-top-110 {
+  margin-top: 110px; }
+
+.margin-top-111 {
+  margin-top: 111px; }
+
+.margin-top-112 {
+  margin-top: 112px; }
+
+.margin-top-113 {
+  margin-top: 113px; }
+
+.margin-top-114 {
+  margin-top: 114px; }
+
+.margin-top-115 {
+  margin-top: 115px; }
+
+.margin-top-116 {
+  margin-top: 116px; }
+
+.margin-top-117 {
+  margin-top: 117px; }
+
+.margin-top-118 {
+  margin-top: 118px; }
+
+.margin-top-119 {
+  margin-top: 119px; }
+
+.margin-top-120 {
+  margin-top: 120px; }
+
 .margin-bottom-1 {
   margin-bottom: 1px; }
 
@@ -1837,13 +2017,16 @@ h4 {
   font-weight: 200; }
 
 .text-blue {
-  color: #A3D7E9; }
+  color: #A3D7E9 !important; }
 
 .text-green {
-  color: #B3D490; }
+  color: #B3D490 !important; }
 
 .text-white {
-  color: #FFFFFF; }
+  color: #FFFFFF !important; }
+
+.text-centered {
+  text-align: center !important; }
 
 /**************************
  * Menu
@@ -1921,6 +2104,9 @@ h4 {
   text-align: center;
   display: table-cell;
   vertical-align: middle; }
+  .circle-small {
+    width: 140px;
+    height: 140px; }
   .circle-grey {
     background-color: #E6E9ED;
     color: #434A54; }
@@ -1938,7 +2124,7 @@ h4 {
   position: relative; }
   .circle-media-types .inner-circle {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #E6E9ED;
     border-radius: 100%;
     width: 400px;
     height: 400px;
@@ -1951,10 +2137,14 @@ h4 {
     .circle-media-types .inner-circle > p {
       display: table-cell;
       text-align: center;
-      vertical-align: middle; }
+      vertical-align: middle;
+      position: relative;
+      top: -13px; }
+      .circle-media-types .inner-circle > p a {
+        color: #434A54; }
     .circle-media-types .inner-circle .corner {
       background-color: #434A54;
-      border: 15px solid #E6E9ED;
+      border: 15px solid #CCD1D9;
       border-radius: 100%;
       width: 130px;
       height: 130px;
