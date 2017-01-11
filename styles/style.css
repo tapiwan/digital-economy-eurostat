@@ -1303,6 +1303,69 @@ select {
 .no-padding {
   padding: 0; }
 
+.padding-0 {
+  padding: 0px; }
+
+.padding-1 {
+  padding: 1px; }
+
+.padding-2 {
+  padding: 2px; }
+
+.padding-3 {
+  padding: 3px; }
+
+.padding-4 {
+  padding: 4px; }
+
+.padding-5 {
+  padding: 5px; }
+
+.padding-6 {
+  padding: 6px; }
+
+.padding-7 {
+  padding: 7px; }
+
+.padding-8 {
+  padding: 8px; }
+
+.padding-9 {
+  padding: 9px; }
+
+.padding-10 {
+  padding: 10px; }
+
+.padding-11 {
+  padding: 11px; }
+
+.padding-12 {
+  padding: 12px; }
+
+.padding-13 {
+  padding: 13px; }
+
+.padding-14 {
+  padding: 14px; }
+
+.padding-15 {
+  padding: 15px; }
+
+.padding-16 {
+  padding: 16px; }
+
+.padding-17 {
+  padding: 17px; }
+
+.padding-18 {
+  padding: 18px; }
+
+.padding-19 {
+  padding: 19px; }
+
+.padding-20 {
+  padding: 20px; }
+
 .padding-top-0 {
   padding-top: 0px; }
 
@@ -2038,6 +2101,12 @@ select {
 /**************************
  * Left/Right
  **************************/
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
 .left-0 {
   left: 0px; }
 
@@ -2445,6 +2514,18 @@ select {
 
 .text-centered {
   text-align: center !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+/**
+ * Backgrounds
+ */
+.bg-grey-light {
+  background-color: #CCD1D9; }
 
 /**************************
  * Menu

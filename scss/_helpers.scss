@@ -36,6 +36,12 @@
     padding: 0;
 }
 
+@for $i from 0 through 20 {
+    .padding-#{$i} {
+        padding: $i#{px};
+    }
+}
+
 @for $i from 0 through 60 {
     .padding-top-#{$i} {
         padding-top: $i#{px};
@@ -64,6 +70,14 @@
 /**************************
  * Left/Right
  **************************/
+ .relative {
+     position: relative;
+ }
+
+ .absolute {
+     position: absolute;
+ }
+
 @for $i from 0 through 60 {
     .left-#{$i} {
         left: $i#{px};
@@ -127,4 +141,21 @@
 
 .text-centered {
     text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/**
+ * Backgrounds
+ */
+.bg {
+    &-grey-light {
+        background-color: $grey-lighter;
+    }
 }
