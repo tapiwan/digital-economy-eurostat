@@ -159,3 +159,12 @@
         background-color: $grey-lighter;
     }
 }
+
+/**
+ * Images
+ */
+.img {
+    &-fluid {
+        max-width: 100%;
+    }
+}
