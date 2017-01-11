@@ -361,6 +361,24 @@ h4 {
 #intro {
   width: 100%; }
 
+/**
+ * Select
+ */
+select {
+  background-color: #E6E9ED;
+  border: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 220px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-image: url("../images/caret-down.png");
+  background-repeat: no-repeat;
+  background-position: right center; }
+
 /**************************
  * Margin
  **************************/
