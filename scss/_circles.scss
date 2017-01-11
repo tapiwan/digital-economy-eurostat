@@ -8,15 +8,26 @@
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    position: relative;
 
     &-small {
         width: 140px;
         height: 140px;
     }
 
+    &-xtra-small {
+        width: 100px;
+        height: 100px;
+    }
+
     &-grey {
         background-color: $grey-lightest;
         color: $grey-dark;
+    }
+
+    &-blue {
+        background-color: $blue;
+        color: $white;
     }
 
     .image {

@@ -2018,6 +2018,375 @@ h4 {
   padding-right: 60px; }
 
 /**************************
+ * Left/Right
+ **************************/
+.left-0 {
+  left: 0px; }
+
+.left-1 {
+  left: 1px; }
+
+.left-2 {
+  left: 2px; }
+
+.left-3 {
+  left: 3px; }
+
+.left-4 {
+  left: 4px; }
+
+.left-5 {
+  left: 5px; }
+
+.left-6 {
+  left: 6px; }
+
+.left-7 {
+  left: 7px; }
+
+.left-8 {
+  left: 8px; }
+
+.left-9 {
+  left: 9px; }
+
+.left-10 {
+  left: 10px; }
+
+.left-11 {
+  left: 11px; }
+
+.left-12 {
+  left: 12px; }
+
+.left-13 {
+  left: 13px; }
+
+.left-14 {
+  left: 14px; }
+
+.left-15 {
+  left: 15px; }
+
+.left-16 {
+  left: 16px; }
+
+.left-17 {
+  left: 17px; }
+
+.left-18 {
+  left: 18px; }
+
+.left-19 {
+  left: 19px; }
+
+.left-20 {
+  left: 20px; }
+
+.left-21 {
+  left: 21px; }
+
+.left-22 {
+  left: 22px; }
+
+.left-23 {
+  left: 23px; }
+
+.left-24 {
+  left: 24px; }
+
+.left-25 {
+  left: 25px; }
+
+.left-26 {
+  left: 26px; }
+
+.left-27 {
+  left: 27px; }
+
+.left-28 {
+  left: 28px; }
+
+.left-29 {
+  left: 29px; }
+
+.left-30 {
+  left: 30px; }
+
+.left-31 {
+  left: 31px; }
+
+.left-32 {
+  left: 32px; }
+
+.left-33 {
+  left: 33px; }
+
+.left-34 {
+  left: 34px; }
+
+.left-35 {
+  left: 35px; }
+
+.left-36 {
+  left: 36px; }
+
+.left-37 {
+  left: 37px; }
+
+.left-38 {
+  left: 38px; }
+
+.left-39 {
+  left: 39px; }
+
+.left-40 {
+  left: 40px; }
+
+.left-41 {
+  left: 41px; }
+
+.left-42 {
+  left: 42px; }
+
+.left-43 {
+  left: 43px; }
+
+.left-44 {
+  left: 44px; }
+
+.left-45 {
+  left: 45px; }
+
+.left-46 {
+  left: 46px; }
+
+.left-47 {
+  left: 47px; }
+
+.left-48 {
+  left: 48px; }
+
+.left-49 {
+  left: 49px; }
+
+.left-50 {
+  left: 50px; }
+
+.left-51 {
+  left: 51px; }
+
+.left-52 {
+  left: 52px; }
+
+.left-53 {
+  left: 53px; }
+
+.left-54 {
+  left: 54px; }
+
+.left-55 {
+  left: 55px; }
+
+.left-56 {
+  left: 56px; }
+
+.left-57 {
+  left: 57px; }
+
+.left-58 {
+  left: 58px; }
+
+.left-59 {
+  left: 59px; }
+
+.left-60 {
+  left: 60px; }
+
+.right-0 {
+  right: 0px; }
+
+.right-1 {
+  right: 1px; }
+
+.right-2 {
+  right: 2px; }
+
+.right-3 {
+  right: 3px; }
+
+.right-4 {
+  right: 4px; }
+
+.right-5 {
+  right: 5px; }
+
+.right-6 {
+  right: 6px; }
+
+.right-7 {
+  right: 7px; }
+
+.right-8 {
+  right: 8px; }
+
+.right-9 {
+  right: 9px; }
+
+.right-10 {
+  right: 10px; }
+
+.right-11 {
+  right: 11px; }
+
+.right-12 {
+  right: 12px; }
+
+.right-13 {
+  right: 13px; }
+
+.right-14 {
+  right: 14px; }
+
+.right-15 {
+  right: 15px; }
+
+.right-16 {
+  right: 16px; }
+
+.right-17 {
+  right: 17px; }
+
+.right-18 {
+  right: 18px; }
+
+.right-19 {
+  right: 19px; }
+
+.right-20 {
+  right: 20px; }
+
+.right-21 {
+  right: 21px; }
+
+.right-22 {
+  right: 22px; }
+
+.right-23 {
+  right: 23px; }
+
+.right-24 {
+  right: 24px; }
+
+.right-25 {
+  right: 25px; }
+
+.right-26 {
+  right: 26px; }
+
+.right-27 {
+  right: 27px; }
+
+.right-28 {
+  right: 28px; }
+
+.right-29 {
+  right: 29px; }
+
+.right-30 {
+  right: 30px; }
+
+.right-31 {
+  right: 31px; }
+
+.right-32 {
+  right: 32px; }
+
+.right-33 {
+  right: 33px; }
+
+.right-34 {
+  right: 34px; }
+
+.right-35 {
+  right: 35px; }
+
+.right-36 {
+  right: 36px; }
+
+.right-37 {
+  right: 37px; }
+
+.right-38 {
+  right: 38px; }
+
+.right-39 {
+  right: 39px; }
+
+.right-40 {
+  right: 40px; }
+
+.right-41 {
+  right: 41px; }
+
+.right-42 {
+  right: 42px; }
+
+.right-43 {
+  right: 43px; }
+
+.right-44 {
+  right: 44px; }
+
+.right-45 {
+  right: 45px; }
+
+.right-46 {
+  right: 46px; }
+
+.right-47 {
+  right: 47px; }
+
+.right-48 {
+  right: 48px; }
+
+.right-49 {
+  right: 49px; }
+
+.right-50 {
+  right: 50px; }
+
+.right-51 {
+  right: 51px; }
+
+.right-52 {
+  right: 52px; }
+
+.right-53 {
+  right: 53px; }
+
+.right-54 {
+  right: 54px; }
+
+.right-55 {
+  right: 55px; }
+
+.right-56 {
+  right: 56px; }
+
+.right-57 {
+  right: 57px; }
+
+.right-58 {
+  right: 58px; }
+
+.right-59 {
+  right: 59px; }
+
+.right-60 {
+  right: 60px; }
+
+/**************************
  * Text
  **************************/
 .text-big {
@@ -2134,13 +2503,20 @@ h4 {
   height: 270px;
   text-align: center;
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: relative; }
   .circle-small {
     width: 140px;
     height: 140px; }
+  .circle-xtra-small {
+    width: 100px;
+    height: 100px; }
   .circle-grey {
     background-color: #E6E9ED;
     color: #434A54; }
+  .circle-blue {
+    background-color: #4FC1E9;
+    color: #FFFFFF; }
   .circle .image {
     display: block;
     margin: 0 auto;
