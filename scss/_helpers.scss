@@ -5,25 +5,25 @@
     margin: 0;
 }
 
-@for $i from 1 through 120 {
+@for $i from 0 through 120 {
     .margin-top-#{$i} {
         margin-top: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .margin-bottom-#{$i} {
         margin-bottom: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .margin-left-#{$i} {
         margin-left: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .margin-right-#{$i} {
         margin-right: $i#{px};
     }
@@ -36,25 +36,25 @@
     padding: 0;
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .padding-top-#{$i} {
         padding-top: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .padding-bottom-#{$i} {
         padding-bottom: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .padding-left-#{$i} {
         padding-left: $i#{px};
     }
 }
 
-@for $i from 1 through 60 {
+@for $i from 0 through 60 {
     .padding-right-#{$i} {
         padding-right: $i#{px};
     }
