@@ -361,6 +361,15 @@ h4 {
 #intro {
   width: 100%; }
 
+/*
+ * Hand with phone
+ */
+#hand-with-phone {
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  z-index: 2; }
+
 /**
  * Select
  */
@@ -2107,6 +2116,36 @@ select {
 .absolute {
   position: absolute; }
 
+.z-index-1 {
+  z-index: 1; }
+
+.z-index-2 {
+  z-index: 2; }
+
+.z-index-3 {
+  z-index: 3; }
+
+.z-index-4 {
+  z-index: 4; }
+
+.z-index-5 {
+  z-index: 5; }
+
+.z-index-6 {
+  z-index: 6; }
+
+.z-index-7 {
+  z-index: 7; }
+
+.z-index-8 {
+  z-index: 8; }
+
+.z-index-9 {
+  z-index: 9; }
+
+.z-index-10 {
+  z-index: 10; }
+
 .left-0 {
   left: 0px; }
 
@@ -2472,6 +2511,9 @@ select {
 
 .right-60 {
   right: 60px; }
+
+.top-minus-25 {
+  top: -25px; }
 
 /**************************
  * Text

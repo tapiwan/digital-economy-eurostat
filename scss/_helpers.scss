@@ -78,6 +78,12 @@
      position: absolute;
  }
 
+ @for $i from 1 through 10 {
+     .z-index-#{$i} {
+         z-index: $i;
+     }
+ }
+
 @for $i from 0 through 60 {
     .left-#{$i} {
         left: $i#{px};
@@ -88,6 +94,10 @@
     .right-#{$i} {
         right: $i#{px};
     }
+}
+
+.top-minus-25 {
+    top: -25px;
 }
 
 /**************************

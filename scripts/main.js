@@ -52,7 +52,6 @@
 
                 switch(index) {
                     case 1:
-                        console.log('test');
                         initSectionOne();
                         break;
                     case 2:

@@ -112,6 +112,16 @@ h4 { font-size: $h4-size; }
     width: 100%;
 }
 
+/*
+ * Hand with phone
+ */
+#hand-with-phone {
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    z-index: 2;
+}
+
 /**
  * Select
  */
