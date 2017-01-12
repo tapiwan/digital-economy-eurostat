@@ -376,6 +376,24 @@ h4 {
 .pointer {
   cursor: pointer; }
 
+.tooltip-generic {
+  display: none;
+  background-color: #434A54;
+  color: white;
+  padding: 10px;
+  position: relative; }
+  .tooltip-generic:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #434A54;
+    border-left: 7px solid transparent;
+    top: -7px;
+    left: 50%;
+    margin-left: -3.5px; }
+
 /**
  * Select
  */
@@ -2710,6 +2728,12 @@ select {
       height: 130px;
       position: absolute;
       display: table; }
+      .circle-media-types .inner-circle .corner .tooltip {
+        position: absolute;
+        background-color: #E6E9ED;
+        padding: 10px;
+        width: 250px;
+        text-align: left; }
       .circle-media-types .inner-circle .corner .mini-corner {
         background-color: #434A54;
         border-radius: 100%;
@@ -2733,24 +2757,36 @@ select {
       .circle-media-types .inner-circle .corner-top-left {
         left: -30px;
         top: -30px; }
+        .circle-media-types .inner-circle .corner-top-left .tooltip {
+          left: -325px;
+          top: -50px; }
         .circle-media-types .inner-circle .corner-top-left .category {
           top: -45px;
           left: -135px; }
       .circle-media-types .inner-circle .corner-top-right {
         right: -30px;
         top: -30px; }
+        .circle-media-types .inner-circle .corner-top-right .tooltip {
+          left: 155px;
+          top: -50px; }
         .circle-media-types .inner-circle .corner-top-right .category {
           top: -45px;
           left: -100px; }
       .circle-media-types .inner-circle .corner-bottom-left {
         left: -30px;
         bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-left .tooltip {
+          left: -365px;
+          bottom: -50px; }
         .circle-media-types .inner-circle .corner-bottom-left .category {
           bottom: -45px;
           left: -100px; }
       .circle-media-types .inner-circle .corner-bottom-right {
         right: -30px;
         bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-right .tooltip {
+          left: 175px;
+          bottom: -50px; }
         .circle-media-types .inner-circle .corner-bottom-right .category {
           bottom: -45px;
           left: -100px; }
@@ -2771,8 +2807,6 @@ select {
     color: #FFFFFF; }
   .pillar-wrapper .pillar .percentage {
     font-size: 35px; }
-  .pillar-wrapper .description {
-    cursor: pointer; }
   .pillar-wrapper .tooltip {
     display: none;
     background-color: #434A54;

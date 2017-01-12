@@ -81,6 +81,14 @@
             position: absolute;
             display: table;
 
+            .tooltip {
+                position: absolute;
+                background-color: $grey-lightest;
+                padding: 10px;
+                width: 250px;
+                text-align: left;
+            }
+
             .mini-corner {
                 background-color: $grey-dark;
                 border-radius: 100%;
@@ -115,6 +123,11 @@
                 left: -30px;
                 top: -30px;
 
+                .tooltip {
+                    left: -325px;
+                    top: -50px;
+                }
+
                 .category {
                     top: -45px;
                     left: -135px;
@@ -124,6 +137,12 @@
             &-top-right {
                 right: -30px;
                 top: -30px;
+
+                .tooltip {
+                    left: 155px;
+                    top: -50px;
+                }
+
 
                 .category {
                     top: -45px;
@@ -135,6 +154,11 @@
                 left: -30px;
                 bottom: -30px;
 
+                .tooltip {
+                    left: -365px;
+                    bottom: -50px;
+                }
+
                 .category {
                     bottom: -45px;
                     left: -100px;
@@ -144,6 +168,11 @@
             &-bottom-right {
                 right: -30px;
                 bottom: -30px;
+
+                .tooltip {
+                    left: 175px;
+                    bottom: -50px;
+                }
 
                 .category {
                     bottom: -45px;
