@@ -112,8 +112,20 @@
                 top: -30px;
 
                 .tooltip {
-                    left: -325px;
+                    left: -285px;
                     top: -50px;
+
+                    &:before {
+                        position: absolute;
+                        content:"";
+                        width:0;
+                        height:0;
+                        border-left:7px solid $grey-lightest;
+                        border-bottom:7px solid transparent;
+                        border-top:7px solid transparent;
+                        right: -7px;
+                        top: 14px;
+                    }
                 }
 
                 .category {
@@ -127,8 +139,20 @@
                 top: -30px;
 
                 .tooltip {
-                    left: 155px;
+                    left: 145px;
                     top: -50px;
+
+                    &:before {
+                        position: absolute;
+                        content:"";
+                        width:0;
+                        height:0;
+                        border-right:7px solid $grey-lightest;
+                        border-bottom:7px solid transparent;
+                        border-top:7px solid transparent;
+                        left: -7px;
+                        top: 14px;
+                    }
                 }
 
 
@@ -143,8 +167,20 @@
                 bottom: -30px;
 
                 .tooltip {
-                    left: -365px;
+                    left: -355px;
                     bottom: -50px;
+
+                    &:before {
+                        position: absolute;
+                        content:"";
+                        width:0;
+                        height:0;
+                        border-left:7px solid $grey-lightest;
+                        border-bottom:7px solid transparent;
+                        border-top:7px solid transparent;
+                        right: -7px;
+                        bottom: 18px;
+                    }
                 }
 
                 .category {
@@ -158,8 +194,20 @@
                 bottom: -30px;
 
                 .tooltip {
-                    left: 175px;
+                    left: 165px;
                     bottom: -50px;
+
+                    &:before {
+                        position: absolute;
+                        content:"";
+                        width:0;
+                        height:0;
+                        border-right:7px solid $grey-lightest;
+                        border-bottom:7px solid transparent;
+                        border-top:7px solid transparent;
+                        left: -7px;
+                        bottom: 18px;
+                    }
                 }
 
                 .category {
