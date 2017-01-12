@@ -81,7 +81,7 @@
                             <div class="col-6">
                                 <div class="circle circle-grey">
                                     <img class="image" src="images/router-135px.png" alt="Router">
-                                    <p class="no-margin margin-top-10 text-big"><span data-counter data-start="0" data-end="93">0</span>%</p>
+                                    <p class="no-margin margin-top-10 text-big"><span data-counter data-start="0" data-end="93"></span>%</p>
                                     <p class="no-margin margin-top-10 text-small">have fixed broadband<br>access</p>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                         <img id="hand-with-phone" src="images/hand-with-phone.png" alt="Hand with Phone">
                         <div class="margin-left-30 margin-top-60">
                             <div class="circle circle-grey">
-                                <p class="relative z-index-3 top-minus-25 no-margin text-medium text-columnized"><span data-counter data-start="0" data-end="75">0</span>%</p>
+                                <p class="relative z-index-3 top-minus-25 no-margin text-medium text-columnized"><span data-counter data-start="0" data-end="75"></span>%</p>
                                 <p class="relative z-index-3 top-minus-25 no-margin text-xtra-small text-columnized">of enterprises<br>have a<br>website or<br>a homepage</p>
                             </div>
                         </div>
@@ -118,32 +118,36 @@
                             <div class="col-4">
                                 <div class="pillar-wrapper">
                                     <div class="pillar pillar-green" data-pillar data-start="0" data-end="33">
-                                        <p class="percentage"><span class="number">0</span>%</p>
+                                        <p class="percentage"><span data-pillar-percentage>0</span>%</p>
                                     </div>
-                                    <p class="description margin-top-5">CRM <i class="fa fa-info-circle"></i></p>
-                                    <p class="tooltip text-xtra-small text-light no-margin">
+                                    <p data-tooltip="#crm-tooltip" class="description margin-top-5">CRM <i class="fa fa-info-circle"></i></p>
+                                    <p id="crm-tooltip" class="tooltip text-xtra-small text-light no-margin">
                                         Customer Relationship Management. Lorem ipsum dolor sit amet, consecetetur adipiscing elit. In purus libero, sollicitudin.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-4"><div class="pillar-wrapper">
-                                <div class="pillar pillar-blue" data-pillar data-start="0" data-end="39">
-                                    <p class="percentage"><span class="number">0</span>%</p>
+                            <div class="col-4">
+                                <div class="pillar-wrapper">
+                                    <div class="pillar pillar-blue" data-pillar data-start="0" data-end="39">
+                                        <p class="percentage"><span data-pillar-percentage>0</span>%</p>
+                                    </div>
+                                    <p data-tooltip="#social-media-tooltip" class="description margin-top-5">Social Media <i class="fa fa-info-circle"></i></p>
+                                    <p id="social-media-tooltip" class="tooltip text-xtra-small text-light no-margin">
+                                        Social Media. Lorem ipsum dolor sit amet, consecetetur adipiscing elit. In purus libero, sollicitudin.
+                                    </p>
                                 </div>
-                                <p class="description margin-top-5">Social Media <i class="fa fa-info-circle"></i></p>
-                                <p class="tooltip text-xtra-small text-light no-margin">
-                                    Social Media. Lorem ipsum dolor sit amet, consecetetur adipiscing elit. In purus libero, sollicitudin.
-                                </p>
-                            </div></div>
-                            <div class="col-4"><div class="pillar-wrapper">
-                                <div class="pillar pillar-grey" data-pillar data-start="0" data-end="75">
-                                    <p class="percentage"><span class="number">0</span>%</p>
+                            </div>
+                            <div class="col-4">
+                                <div class="pillar-wrapper">
+                                    <div class="pillar pillar-grey" data-pillar data-start="0" data-end="75">
+                                        <p class="percentage"><span data-pillar-percentage>0</span>%</p>
+                                    </div>
+                                    <p data-tooltip="#website-tooltip" class="description margin-top-5">Website <i class="fa fa-info-circle"></i></p>
+                                    <p id="website-tooltip" class="tooltip text-xtra-small text-light no-margin">
+                                        Website. Lorem ipsum dolor sit amet, consecetetur adipiscing elit. In purus libero, sollicitudin.
+                                    </p>
                                 </div>
-                                <p class="description margin-top-5">Website <i class="fa fa-info-circle"></i></p>
-                                <p class="tooltip text-xtra-small text-light no-margin">
-                                    Website. Lorem ipsum dolor sit amet, consecetetur adipiscing elit. In purus libero, sollicitudin.
-                                </p>
-                            </div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,30 +171,34 @@
                                         <div class="mini-corner">
                                             <span class="percentage text-small text-bold text-green">+8%</span>
                                         </div>
-                                        <p class="category">Social Networks <i class="fa fa-info-circle"></i></p>
+                                        <p data-tooltip="#social-networks-tooltip" class="category">Social Networks <i class="fa fa-info-circle pointer"></i></p>
+                                        <p id="social-networks-tooltip" class="tooltip">Social Networks Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id consequatur accusamus.</p>
                                         <p>
-                                            <span class="text-medium text-bold text-blue">36%</span><br>
+                                            <span class="text-medium text-bold text-blue"><span data-counter data-start="0" data-end="36"></span>%</span><br>
                                             <span class="text-small text-bold text-white">2015</span>
                                         </p>
                                     </div>
                                     <div class="corner corner-top-right">
-                                        <p class="category">Blogs &amp; Microblogs <i class="fa fa-info-circle"></i></p>
+                                        <p data-tooltip="#blogs-tooltip" class="category">Blogs &amp; Microblogs <i class="fa fa-info-circle pointer"></i></p>
+                                        <p id="blogs-tooltip" class="tooltip">Blogs Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nesciunt quibusdam molestiae ipsum eum repudiandae inventore.</p>
                                         <p>
-                                            <span class="text-medium text-bold text-green">10%</span><br>
+                                            <span class="text-medium text-bold text-green"><span data-counter data-start="0" data-end="10"></span>%</span><br>
                                             <span class="text-small text-bold text-white">2013</span>
                                         </p>
                                     </div>
                                     <div class="corner corner-bottom-left">
-                                        <p class="category">Wiki-based knowledge-sharing tools <i class="fa fa-info-circle"></i></p>
+                                        <p data-tooltip="#wiki-tools-tooltip" class="category">Wiki-based knowledge-sharing tools <i class="fa fa-info-circle pointer"></i></p>
+                                        <p id="wiki-tools-tooltip" class="tooltip">Wiki-based knowledge-sharing tools Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tempora, obcaecati asperiores.</p>
                                         <p>
-                                            <span class="text-medium text-bold text-green">6%</span><br>
+                                            <span class="text-medium text-bold text-green"><span data-counter data-start="0" data-end="6"></span>%</span><br>
                                             <span class="text-small text-bold text-white">2013</span>
                                         </p>
                                     </div>
                                     <div class="corner corner-bottom-right">
-                                        <p class="category">Multimedia Sharing-Seiten <i class="fa fa-info-circle"></i></p>
+                                        <p data-tooltip="#multimedia-sharing-tooltips" class="category">Multimedia sharing-sites <i class="fa fa-info-circle pointer"></i></p>
+                                        <p id="multimedia-sharing-tooltips" class="tooltip">Multimedia sharing-sites Lorem ipsum dolor sit amet, consectetur adipisicing elit. In amet maxime quibusdam, porro distinctio.</p>
                                         <p>
-                                            <span class="text-medium text-bold text-green">11%</span><br>
+                                            <span class="text-medium text-bold text-green"><span data-counter data-start="0" data-end="11"></span>%</span><br>
                                             <span class="text-small text-bold text-white">2013</span>
                                         </p>
                                     </div>
@@ -433,15 +441,15 @@
                             <div class="row">
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-s.png" alt="Small enterprise">
-                                    <p class="text-medium text-green text-bold">44%</p>
+                                    <p class="text-medium text-green text-bold"><span data-counter data-start="0" data-end="44"></span>%</p>
                                 </div>
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-m.png" alt="Medium enterprise">
-                                    <p class="text-medium text-green text-bold">43%</p>
+                                    <p class="text-medium text-green text-bold"><span data-counter data-start="0" data-end="43"></span>%</p>
                                 </div>
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-l.png" alt="Large enterprise">
-                                    <p class="text-medium text-green text-bold">77%</p>
+                                    <p class="text-medium text-green text-bold"><span data-counter data-start="0" data-end="77"></span>%</p>
                                 </div>
                             </div>
                         </div>
@@ -449,15 +457,15 @@
                             <div class="row">
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-s.png" alt="Small enterprise">
-                                    <p class="text-medium text-blue text-bold">3%</p>
+                                    <p class="text-medium text-blue text-bold"><span data-counter data-start="0" data-end="3"></span>%</p>
                                 </div>
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-m.png" alt="Medium enterprise">
-                                    <p class="text-medium text-blue text-bold">6%</p>
+                                    <p class="text-medium text-blue text-bold"><span data-counter data-start="0" data-end="6"></span>%</p>
                                 </div>
                                 <div class="col-4 text-centered">
                                     <img src="images/enterprise-l.png" alt="Large enterprise">
-                                    <p class="text-medium text-blue text-bold">18%</p>
+                                    <p class="text-medium text-blue text-bold"><span data-counter data-start="0" data-end="18"></span>%</p>
                                 </div>
                             </div>
                         </div>

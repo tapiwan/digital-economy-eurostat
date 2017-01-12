@@ -4,8 +4,8 @@
     //Initialize
     (function init() {
         setInitialState();
-        initFullPage();
         centerMenu();
+        initFullPage();
     })();
 
     //Set initial state of all elements
@@ -26,9 +26,38 @@
         g.$pillars = $('[data-pillar]');
         g.$pillars.each(function() {
             var $this = $(this),
-                $number = $this.find('.number');
+                $number = $this.find('[data-pillar-percentage]');
 
             $number.html($this.data('start'));
+        });
+
+        //Load tooltips
+        g.$tooltips = $('[data-tooltip]');
+        g.$tooltips.each(function() {
+            var $toggler = $(this),
+                $target = $($toggler.data('tooltip'));
+
+            if($toggler.data('tooltip-state') === 'visible') {
+                $target.show();
+            }
+            else {
+                $target.hide();
+            }
+
+            $toggler.click(function() {
+                $target.fadeToggle();
+            });
+        });
+    }
+
+    //Center menu vertically
+    function centerMenu() {
+        var $menu = $('#menu');
+            $menuHeight = $menu.height();
+
+        $menu.css({
+            "top": "50%",
+            "margin-top": -($menuHeight/2)
         });
     }
 
@@ -52,31 +81,31 @@
 
                 switch(index) {
                     case 1:
-                        initSectionOne();
+                        initSectionOne(loadedSection);
                         break;
                     case 2:
-                        initSectionTwo();
+                        initSectionTwo(loadedSection);
                         break;
                     case 3:
-                        initSectionThree();
+                        initSectionThree(loadedSection);
                         break;
                     case 4:
-                        initSectionFour();
+                        initSectionFour(loadedSection);
                         break;
                     case 5:
-                        initSectionFive();
+                        initSectionFive(loadedSection);
                         break;
                     case 6:
-                        initSectionSix();
+                        initSectionSix(loadedSection);
                         break;
                     case 7:
-                        initSectionSeven();
+                        initSectionSeven(loadedSection);
                         break;
                     case 8:
-                        initSectionEight();
+                        initSectionEight(loadedSection);
                         break;
                     case 9:
-                        initSectionNine();
+                        initSectionNine(loadedSection);
                         break;
 
                 }
@@ -84,18 +113,7 @@
         });
     }
 
-    //Center menu vertically
-    function centerMenu() {
-        var $menu = $('#menu');
-            $menuHeight = $menu.height();
-
-        $menu.css({
-            "top": "50%",
-            "margin-top": -($menuHeight/2)
-        });
-    }
-
-    function initSectionOne() {
+    function initSectionOne(section) {
         if(!g.sectionOneLoaded) {
             //Move the intro picture in from the left
             g.$intro.animate({
@@ -110,99 +128,102 @@
         }
     }
 
-    function initSectionTwo() {
+    function initSectionTwo(section) {
         if(!g.sectionTwoLoaded) {
-            //Let the counters count up
-            g.$counters.each(function() {
-                var $this = $(this),
-                    $start = $this.data('start'),
-                    $end  = $this.data('end');
-
-                var interval = setInterval(function() {
-                    if($start <= $end) {
-                        $this.html($start++);
-                    }
-                    else {
-                        clearInterval(interval);
-                    }
-                }, 10);
-            });
+            animateCounters(section);
 
             //Mark section two as loaded
             g.sectionTwoLoaded = true;
         }
     }
 
-    function initSectionThree() {
+    function initSectionThree(section) {
         if(!g.sectionThreeLoaded) {
-
-            g.$pillars.each(function() {
-                var $this = $(this),
-                    $start = $this.data('start'),
-                    $end  = $this.data('end'),
-                    $number = $this.find('.number');
-
-                //Animate pillars growing
-                var interval = setInterval(function() {
-                    if($start <= $end) {
-                        $this.height($start++*3);
-                        $number.html($start++);
-                    }
-                    else {
-                        clearInterval(interval);
-                    }
-                }, 10);
-
-                //Tooltip toggling
-                $this.next('.description').click(function() {
-                    $(this).next('.tooltip').fadeToggle();
-                });
-            });
+            animatePillars(section);
 
             g.sectionThreeLoaded = true;
         }
     }
 
-    function initSectionFour() {
+    function initSectionFour(section) {
         if(!g.sectionFourLoaded) {
+            animateCounters(section);
 
             g.sectionFourLoaded = true;
         }
     }
 
-    function initSectionFive() {
+    function initSectionFive(section) {
         if(!g.sectionFiveLoaded) {
 
             g.sectionFiveLoaded = true;
         }
     }
 
-    function initSectionSix() {
+    function initSectionSix(section) {
         if(!g.sectionSixLoaded) {
 
             g.sectionSixLoaded = true;
         }
     }
 
-    function initSectionSeven() {
+    function initSectionSeven(section) {
         if(!g.sectionSevenLoaded) {
 
             g.sectionSevenLoaded = true;
         }
     }
 
-    function initSectionEight() {
+    function initSectionEight(section) {
         if(!g.sectionEightLoaded) {
+            animateCounters(section);
 
             g.sectionEightLoaded = true;
         }
     }
 
-    function initSectionNine() {
+    function initSectionNine(section) {
         if(!g.sectionNineLoaded) {
 
             g.sectionNineLoaded = true;
         }
+    }
+
+    function animateCounters(section) {
+        section.find('[data-counter]').each(function() {
+            var $this = $(this),
+                $start = $this.data('start'),
+                $end  = $this.data('end');
+
+            var interval = setInterval(function() {
+                if($start <= $end) {
+                    $this.html($start++);
+                }
+                else {
+                    clearInterval(interval);
+                }
+            }, 10);
+        });
+    }
+
+    function animatePillars(section) {
+        section.find('[data-pillar]').each(function() {
+            var $this = $(this),
+                $start = $this.data('start'),
+                $end  = $this.data('end'),
+                $number = $this.find('[data-pillar-percentage]');
+
+            //Animate pillars growing
+            var interval = setInterval(function() {
+                if($start <= $end) {
+                    $number.html($start++);
+                    $this.height($start*3);
+                }
+                else {
+                    clearInterval(interval);
+                }
+            }, 10);
+        });
     }
 
 })(jQuery);
