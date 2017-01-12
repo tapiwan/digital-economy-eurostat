@@ -2599,6 +2599,14 @@ select {
 .img-fluid {
   max-width: 100%; }
 
+/**
+ * Tableless Table
+ */
+.table-cell-centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
 /**************************
  * Menu
  **************************/
@@ -2712,13 +2720,10 @@ select {
     background-repeat: no-repeat;
     background-size: 365px;
     background-position: center center; }
-    .circle-media-types .inner-circle > p {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
+    .circle-media-types .inner-circle .cta {
       position: relative;
       top: -13px; }
-      .circle-media-types .inner-circle > p a {
+      .circle-media-types .inner-circle .cta a {
         color: #434A54; }
     .circle-media-types .inner-circle .corner {
       background-color: #434A54;
@@ -2734,25 +2739,20 @@ select {
         padding: 10px;
         width: 250px;
         text-align: left; }
-      .circle-media-types .inner-circle .corner .mini-corner {
+      .circle-media-types .inner-circle .corner .difference {
+        display: none;
         background-color: #434A54;
         border-radius: 100%;
         width: 50px;
         height: 50px;
         position: absolute;
-        display: table;
         right: -30px;
         top: -10px; }
-        .circle-media-types .inner-circle .corner .mini-corner span {
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center; }
+        .circle-media-types .inner-circle .corner .difference.active {
+          display: table; }
       .circle-media-types .inner-circle .corner .category {
         position: absolute;
-        width: 300px; }
-      .circle-media-types .inner-circle .corner > p {
-        vertical-align: middle;
-        display: table-cell;
+        width: 300px;
         text-align: center; }
       .circle-media-types .inner-circle .corner-top-left {
         left: -30px;
@@ -2762,7 +2762,7 @@ select {
           top: -50px; }
         .circle-media-types .inner-circle .corner-top-left .category {
           top: -45px;
-          left: -135px; }
+          left: -100px; }
       .circle-media-types .inner-circle .corner-top-right {
         right: -30px;
         top: -30px; }
@@ -2794,33 +2794,14 @@ select {
 /**************************
  * Pillars
  **************************/
-.pillar-wrapper {
-  text-align: center; }
-  .pillar-wrapper .pillar-green {
-    background-color: #B3D490;
-    color: #333333; }
-  .pillar-wrapper .pillar-blue {
-    background-color: #A3D7E9;
-    color: #333333; }
-  .pillar-wrapper .pillar-grey {
-    background-color: #333333;
-    color: #FFFFFF; }
-  .pillar-wrapper .pillar .percentage {
-    font-size: 35px; }
-  .pillar-wrapper .tooltip {
-    display: none;
-    background-color: #434A54;
-    color: white;
-    padding: 10px;
-    position: relative; }
-    .pillar-wrapper .tooltip:before {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 0;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #434A54;
-      border-left: 7px solid transparent;
-      top: -7px;
-      left: 50%;
-      margin-left: -3.5px; }
+.pillar-green {
+  background-color: #B3D490;
+  color: #333333; }
+
+.pillar-blue {
+  background-color: #A3D7E9;
+  color: #333333; }
+
+.pillar-grey {
+  background-color: #333333;
+  color: #FFFFFF; }

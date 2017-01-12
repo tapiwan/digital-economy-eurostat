@@ -178,3 +178,12 @@
         max-width: 100%;
     }
 }
+
+/**
+ * Tableless Table
+ */
+.table-cell-centered {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
