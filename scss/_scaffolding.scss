@@ -134,7 +134,48 @@ h4 { font-size: $h4-size; }
     background-color: $grey-dark;
     color: white;
     padding: 10px;
-    position: relative;
+    position: absolute;
+
+    &#web-sales-tooltip {
+        left: -210px;
+        bottom: 15px;
+        width: 210px;
+
+        &:before {
+            position: absolute;
+            content:"";
+            width:0;
+            height:0;
+            border-right: none;
+            border-left:7px solid $grey-dark;
+            border-bottom:7px solid transparent;
+            border-top:7px solid transparent;
+            top: auto;
+            right: -7px;
+            bottom: 18px;
+            left: auto;
+        }
+    }
+
+    &#edi-sales-tooltip {
+        right: -210px;
+        bottom: 15px;
+        width: 210px;
+
+        &:before {
+            position: absolute;
+            content:"";
+            width:0;
+            height:0;
+            border-left: none;
+            border-right:7px solid $grey-dark;
+            border-bottom:7px solid transparent;
+            border-top:7px solid transparent;
+            top: auto;
+            left: -3.5px;
+            bottom: 18px;
+        }
+    }
 
     &:before {
         position: absolute;

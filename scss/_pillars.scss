@@ -1,7 +1,16 @@
 /**************************
  * Pillars
  **************************/
+.pillar-outer {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+}
+
 .pillar {
+    min-height: 65px !important;
+
     &-green {
         background-color: $green-pastel;
         color: $grey-darkest;

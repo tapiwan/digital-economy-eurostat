@@ -381,7 +381,40 @@ h4 {
   background-color: #434A54;
   color: white;
   padding: 10px;
-  position: relative; }
+  position: absolute; }
+  .tooltip-generic#web-sales-tooltip {
+    left: -210px;
+    bottom: 15px;
+    width: 210px; }
+    .tooltip-generic#web-sales-tooltip:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-right: none;
+      border-left: 7px solid #434A54;
+      border-bottom: 7px solid transparent;
+      border-top: 7px solid transparent;
+      top: auto;
+      right: -7px;
+      bottom: 18px;
+      left: auto; }
+  .tooltip-generic#edi-sales-tooltip {
+    right: -210px;
+    bottom: 15px;
+    width: 210px; }
+    .tooltip-generic#edi-sales-tooltip:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: none;
+      border-right: 7px solid #434A54;
+      border-bottom: 7px solid transparent;
+      border-top: 7px solid transparent;
+      top: auto;
+      left: -3.5px;
+      bottom: 18px; }
   .tooltip-generic:before {
     position: absolute;
     content: "";
@@ -2540,6 +2573,12 @@ select {
   top: -25px; }
 
 /**************************
+ * Height
+ **************************/
+.height-280 {
+  height: 280px; }
+
+/**************************
  * Text
  **************************/
 .text-big {
@@ -2834,14 +2873,20 @@ select {
 /**************************
  * Pillars
  **************************/
-.pillar-green {
-  background-color: #B3D490;
-  color: #333333; }
+.pillar-outer {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px; }
 
-.pillar-blue {
-  background-color: #A3D7E9;
-  color: #333333; }
-
-.pillar-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
+.pillar {
+  min-height: 65px !important; }
+  .pillar-green {
+    background-color: #B3D490;
+    color: #333333; }
+  .pillar-blue {
+    background-color: #A3D7E9;
+    color: #333333; }
+  .pillar-grey {
+    background-color: #333333;
+    color: #FFFFFF; }
