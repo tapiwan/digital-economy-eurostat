@@ -90,8 +90,7 @@
                 width: 50px;
                 height: 50px;
                 position: absolute;
-                right: -30px;
-                top: -10px;
+                z-index: 10;
             }
 
             .category {
@@ -104,19 +103,22 @@
                 position: relative;
                 width: 100%;
                 height: 100%;
+                border-radius: 100%;
+                background-color: $grey-lighter;
 
                 .face {
                     top: 0;
                     left: 0;
                     position: absolute;
                     background-color: $grey-dark;
-                    //border: 15px solid $grey-lighter;
+                    border: 15px solid $grey-lighter;
                     border-radius: 100%;
                     width: 100%;
                     height: 100%;
-                    padding-top: 35px;
+                    padding-top: 23px;
                     text-align: center;
                     transition: all 1s ease;
+                    cursor: pointer;
                 }
 
                 .front {
@@ -153,6 +155,11 @@
                 left: -30px;
                 top: -30px;
 
+                .difference {
+                    left: -14px;
+                    top: 0px;
+                }
+
                 .tooltip {
                     left: -280px;
                     top: -50px;
@@ -179,6 +186,11 @@
             &-top-right {
                 right: -30px;
                 top: -30px;
+
+                .difference {
+                    right: -14px;
+                    top: 0px;
+                }
 
                 .tooltip {
                     left: 165px;
@@ -208,6 +220,11 @@
                 left: -30px;
                 bottom: -30px;
 
+                .difference {
+                    left: -14px;
+                    bottom: 0px;
+                }
+
                 .tooltip {
                     left: -350px;
                     bottom: -50px;
@@ -234,6 +251,11 @@
             &-bottom-right {
                 right: -30px;
                 bottom: -30px;
+
+                .difference {
+                    right: -14px;
+                    bottom: 0px;
+                }
 
                 .tooltip {
                     left: 185px;

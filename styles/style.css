@@ -2793,8 +2793,7 @@ select {
         width: 50px;
         height: 50px;
         position: absolute;
-        right: -30px;
-        top: -10px; }
+        z-index: 10; }
       .circle-media-types .inner-circle .corner .category {
         position: absolute;
         width: 300px;
@@ -2802,18 +2801,22 @@ select {
       .circle-media-types .inner-circle .corner .coin {
         position: relative;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        border-radius: 100%;
+        background-color: #CCD1D9; }
         .circle-media-types .inner-circle .corner .coin .face {
           top: 0;
           left: 0;
           position: absolute;
           background-color: #434A54;
+          border: 15px solid #CCD1D9;
           border-radius: 100%;
           width: 100%;
           height: 100%;
-          padding-top: 35px;
+          padding-top: 23px;
           text-align: center;
-          transition: all 1s ease; }
+          transition: all 1s ease;
+          cursor: pointer; }
         .circle-media-types .inner-circle .corner .coin .front {
           z-index: 2; }
         .circle-media-types .inner-circle .corner .coin .back {
@@ -2836,6 +2839,9 @@ select {
       .circle-media-types .inner-circle .corner-top-left {
         left: -30px;
         top: -30px; }
+        .circle-media-types .inner-circle .corner-top-left .difference {
+          left: -14px;
+          top: 0px; }
         .circle-media-types .inner-circle .corner-top-left .tooltip {
           left: -280px;
           top: -50px; }
@@ -2855,6 +2861,9 @@ select {
       .circle-media-types .inner-circle .corner-top-right {
         right: -30px;
         top: -30px; }
+        .circle-media-types .inner-circle .corner-top-right .difference {
+          right: -14px;
+          top: 0px; }
         .circle-media-types .inner-circle .corner-top-right .tooltip {
           left: 165px;
           top: -50px; }
@@ -2874,6 +2883,9 @@ select {
       .circle-media-types .inner-circle .corner-bottom-left {
         left: -30px;
         bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-left .difference {
+          left: -14px;
+          bottom: 0px; }
         .circle-media-types .inner-circle .corner-bottom-left .tooltip {
           left: -350px;
           bottom: -50px; }
@@ -2893,6 +2905,9 @@ select {
       .circle-media-types .inner-circle .corner-bottom-right {
         right: -30px;
         bottom: -30px; }
+        .circle-media-types .inner-circle .corner-bottom-right .difference {
+          right: -14px;
+          bottom: 0px; }
         .circle-media-types .inner-circle .corner-bottom-right .tooltip {
           left: 185px;
           bottom: -50px; }
