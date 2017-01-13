@@ -48,6 +48,17 @@
                 $target.fadeToggle();
             });
         });
+
+        //Load Containers
+        g.$coins = $('[data-coin]');
+        g.$coins.each(function() {
+            var $coin = $(this);
+
+            $coin.click(function() {
+                $coin.toggleClass('flipped');
+                $coin.siblings('[data-coin-difference]').fadeToggle();
+            })
+        });
     }
 
     //Center menu vertically

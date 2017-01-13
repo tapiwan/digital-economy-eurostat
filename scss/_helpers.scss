@@ -193,6 +193,10 @@
 /**
  * Tableless Table
  */
+ .table {
+     display: table;
+ }
+ 
 .table-cell-centered {
     display: table-cell;
     vertical-align: middle;

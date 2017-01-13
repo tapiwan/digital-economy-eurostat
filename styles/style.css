@@ -2649,6 +2649,9 @@ select {
 /**
  * Tableless Table
  */
+.table {
+  display: table; }
+
 .table-cell-centered {
   display: table-cell;
   vertical-align: middle;
@@ -2773,9 +2776,6 @@ select {
       .circle-media-types .inner-circle .cta a {
         color: #434A54; }
     .circle-media-types .inner-circle .corner {
-      background-color: #434A54;
-      border: 15px solid #CCD1D9;
-      border-radius: 100%;
       width: 130px;
       height: 130px;
       position: absolute;
@@ -2795,17 +2795,49 @@ select {
         position: absolute;
         right: -30px;
         top: -10px; }
-        .circle-media-types .inner-circle .corner .difference.active {
-          display: table; }
       .circle-media-types .inner-circle .corner .category {
         position: absolute;
         width: 300px;
         text-align: center; }
+      .circle-media-types .inner-circle .corner .coin {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .circle-media-types .inner-circle .corner .coin .face {
+          top: 0;
+          left: 0;
+          position: absolute;
+          background-color: #434A54;
+          border-radius: 100%;
+          width: 100%;
+          height: 100%;
+          padding-top: 35px;
+          text-align: center;
+          transition: all 1s ease; }
+        .circle-media-types .inner-circle .corner .coin .front {
+          z-index: 2; }
+        .circle-media-types .inner-circle .corner .coin .back {
+          visibility: hidden;
+          z-index: 1;
+          transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg); }
+        .circle-media-types .inner-circle .corner .coin.flipped .front {
+          z-index: 1;
+          transform: rotateY(-180deg);
+          -moz-transform: rotateY(-180deg);
+          -webkit-transform: rotateY(-180deg); }
+        .circle-media-types .inner-circle .corner .coin.flipped .back {
+          visibility: visible;
+          z-index: 2;
+          transform: rotateY(0);
+          -moz-transform: rotateY(0);
+          -webkit-transform: rotateY(0); }
       .circle-media-types .inner-circle .corner-top-left {
         left: -30px;
         top: -30px; }
         .circle-media-types .inner-circle .corner-top-left .tooltip {
-          left: -285px;
+          left: -280px;
           top: -50px; }
           .circle-media-types .inner-circle .corner-top-left .tooltip:before {
             position: absolute;
@@ -2819,12 +2851,12 @@ select {
             top: 14px; }
         .circle-media-types .inner-circle .corner-top-left .category {
           top: -45px;
-          left: -100px; }
+          left: -90px; }
       .circle-media-types .inner-circle .corner-top-right {
         right: -30px;
         top: -30px; }
         .circle-media-types .inner-circle .corner-top-right .tooltip {
-          left: 145px;
+          left: 165px;
           top: -50px; }
           .circle-media-types .inner-circle .corner-top-right .tooltip:before {
             position: absolute;
@@ -2838,12 +2870,12 @@ select {
             top: 14px; }
         .circle-media-types .inner-circle .corner-top-right .category {
           top: -45px;
-          left: -100px; }
+          left: -85px; }
       .circle-media-types .inner-circle .corner-bottom-left {
         left: -30px;
         bottom: -30px; }
         .circle-media-types .inner-circle .corner-bottom-left .tooltip {
-          left: -355px;
+          left: -350px;
           bottom: -50px; }
           .circle-media-types .inner-circle .corner-bottom-left .tooltip:before {
             position: absolute;
@@ -2857,12 +2889,12 @@ select {
             bottom: 18px; }
         .circle-media-types .inner-circle .corner-bottom-left .category {
           bottom: -45px;
-          left: -100px; }
+          left: -90px; }
       .circle-media-types .inner-circle .corner-bottom-right {
         right: -30px;
         bottom: -30px; }
         .circle-media-types .inner-circle .corner-bottom-right .tooltip {
-          left: 165px;
+          left: 185px;
           bottom: -50px; }
           .circle-media-types .inner-circle .corner-bottom-right .tooltip:before {
             position: absolute;
@@ -2876,7 +2908,7 @@ select {
             bottom: 18px; }
         .circle-media-types .inner-circle .corner-bottom-right .category {
           bottom: -45px;
-          left: -100px; }
+          left: -85px; }
 
 /**************************
  * Pillars
