@@ -155,6 +155,7 @@
 
     function initSectionFive(section) {
         if(!g.sectionFiveLoaded) {
+            animateCounters(section);
 
             g.sectionFiveLoaded = true;
         }
