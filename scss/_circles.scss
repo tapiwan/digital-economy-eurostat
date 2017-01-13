@@ -30,6 +30,21 @@
         color: $white;
     }
 
+    &-fill {
+        background-image: url('../images/bubble-fill.png');
+        background-size: 100% 0;
+        background-repeat: repeat-x;
+        background-position: left bottom;
+
+        &-left {
+            background-size: 100% 12%;
+        }
+
+        &-right {
+            background-size: 100% 11%;
+        }
+    }
+
     .image {
         display: block;
         margin: 0 auto;

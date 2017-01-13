@@ -2765,6 +2765,15 @@ select {
   .circle-blue {
     background-color: #4FC1E9;
     color: #FFFFFF; }
+  .circle-fill {
+    background-image: url("../images/bubble-fill.png");
+    background-size: 100% 0;
+    background-repeat: repeat-x;
+    background-position: left bottom; }
+    .circle-fill-left {
+      background-size: 100% 12%; }
+    .circle-fill-right {
+      background-size: 100% 11%; }
   .circle .image {
     display: block;
     margin: 0 auto;
