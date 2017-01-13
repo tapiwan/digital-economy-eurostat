@@ -450,6 +450,25 @@ select {
   background-repeat: no-repeat;
   background-position: right center; }
 
+.tabs .tab {
+  display: inline-block;
+  height: 60px;
+  width: auto;
+  background-color: #E6E9ED;
+  vertical-align: top;
+  margin-right: -5px;
+  padding: 5px 15px;
+  border: 1px solid rgba(101, 109, 120, 0.3);
+  cursor: pointer; }
+  .tabs .tab:hover, .tabs .tab.active {
+    background-color: #CCD1D9; }
+  .tabs .tab-left {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .tabs .tab-right {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+
 /**************************
  * Margin
  **************************/

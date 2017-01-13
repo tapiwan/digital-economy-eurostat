@@ -5,6 +5,7 @@
     (function init() {
         setInitialState();
         centerMenu();
+        centerVertically();
         initFullPage();
     })();
 
@@ -49,7 +50,7 @@
             });
         });
 
-        //Load Containers
+        //Load coins
         g.$coins = $('[data-coin]');
         g.$coins.each(function() {
             var $coin = $(this);
@@ -70,6 +71,21 @@
             "top": "50%",
             "margin-top": -($menuHeight/2)
         });
+    }
+
+    function centerVertically() {
+        var $els = $('[data-centerv]');
+
+        $els.each(function() {
+            $elHeight = $(this).height();
+
+            $(this).css({
+                "position": "relative",
+                "top": "50%",
+                "margin-top": -($elHeight/2)
+            });
+        });
+
     }
 
     //Initialize fullPage plugin
@@ -159,6 +175,7 @@
     function initSectionFour(section) {
         if(!g.sectionFourLoaded) {
             animateCounters(section);
+            loadTabs(section);
 
             g.sectionFourLoaded = true;
         }
@@ -236,6 +253,35 @@
                     clearInterval(interval);
                 }
             }, 10);
+        });
+    }
+
+    function loadTabs(section) {
+        section.find('[data-enterprise]').each(function() {
+            var $btn = $(this);
+
+                //Activate first tab
+                if($btn.data('enterprise') === 's') {
+                    $btn.addClass('active');
+                }
+
+                $btn.click(function() {
+                    $size = $btn.data('enterprise');
+
+                    //Remove active state from all tabs
+                    section.find('[data-enterprise]').removeClass('active');
+
+                    //Activate clicked tab
+                    $btn.addClass('active');
+
+                    section.find('[data-switch]').each(function() {
+                        var $svvitch = $(this);
+
+                        $percentage =  $svvitch.data($size);
+
+                        $svvitch.html($percentage);
+                    });
+                });
         });
     }
 

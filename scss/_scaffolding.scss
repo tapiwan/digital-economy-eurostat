@@ -217,3 +217,32 @@ select {
     background-repeat: no-repeat;
     background-position: right center;
 }
+
+.tabs {
+    .tab {
+        display: inline-block;
+        height: 60px;
+        width: auto;
+        background-color: $grey-lightest;
+        vertical-align: top;
+        margin-right: -5px;
+        padding: 5px 15px;
+        border: 1px solid transparentize($grey-light, 0.7);
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            background-color: $grey-lighter;
+        }
+
+        &-left {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        &-right {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
+}
