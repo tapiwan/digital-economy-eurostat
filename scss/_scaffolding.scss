@@ -49,6 +49,14 @@ h2 { font-size: $h2-size; }
 h3 { font-size: $h3-size; }
 h4 { font-size: $h4-size; }
 
+a {
+    color: $grey-dark;
+
+    &.light {
+        color: $grey-light;
+    }
+}
+
 /**************************
  * Text
  **************************/
