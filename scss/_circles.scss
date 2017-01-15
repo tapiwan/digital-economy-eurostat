@@ -61,6 +61,7 @@
 
 .circle-media-types {
     position: relative;
+    top: -30px;
 
     .inner-circle {
         position: relative;
@@ -110,8 +111,6 @@
 
             .category {
                 position: absolute;
-                width: 300px;
-                text-align: center;
             }
 
             .coin {
@@ -195,6 +194,7 @@
                 .category {
                     top: -45px;
                     left: -90px;
+                    text-align: left;
                 }
             }
 
@@ -228,6 +228,7 @@
                 .category {
                     top: -45px;
                     left: -85px;
+                    text-align: right;
                 }
             }
 
@@ -259,7 +260,8 @@
 
                 .category {
                     bottom: -45px;
-                    left: -90px;
+                    left: -240px;
+                    text-align: left;
                 }
             }
 
@@ -292,6 +294,7 @@
                 .category {
                     bottom: -45px;
                     left: -85px;
+                    text-align: right;
                 }
             }
         }

@@ -12,17 +12,17 @@
     min-height: 65px !important;
 
     &-green {
-        background-color: $green-pastel;
+        background-color: $green;
         color: $grey-darkest;
     }
 
     &-blue {
-        background-color: $blue-pastel;
+        background-color: $blue;
         color: $grey-darkest;
     }
 
     &-grey {
-        background-color: $grey-darkest;
-        color: $white;
+        background-color: $grey-cable;
+        color: $grey-darkest;
     }
 }

@@ -3,7 +3,7 @@
  **************************/
 #menu {
     position: fixed;
-    right: 130px;
+    right: 80px;
     top: 50%;
 
     ul {
@@ -30,13 +30,8 @@
             //Link-Buttons active
             &.active {
                 a {
-                    background-color: $green-pastel;
-                    border: 2px solid $white;
-
-                    &.white {
-                        background-color: $white;
-                        border: 2px solid $grey-dark;
-                    }
+                    background-color: $white;
+                    border: 2px solid $grey-darkest;
                 }
             }
 

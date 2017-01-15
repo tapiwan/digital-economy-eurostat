@@ -139,10 +139,10 @@ a {
 
 .tooltip-generic {
     display: none;
-    background-color: $grey-dark;
-    color: white;
+    background-color: $white;
     padding: 10px;
     position: absolute;
+    z-index: 99;
 
     &#web-sales-tooltip {
         left: -210px;
@@ -155,7 +155,7 @@ a {
             width:0;
             height:0;
             border-right: none;
-            border-left:7px solid $grey-dark;
+            border-left:7px solid $white;
             border-bottom:7px solid transparent;
             border-top:7px solid transparent;
             top: auto;
@@ -176,7 +176,7 @@ a {
             width:0;
             height:0;
             border-left: none;
-            border-right:7px solid $grey-dark;
+            border-right:7px solid $white;
             border-bottom:7px solid transparent;
             border-top:7px solid transparent;
             top: auto;
@@ -191,7 +191,7 @@ a {
         width:0;
         height:0;
         border-right:7px solid transparent;
-        border-bottom:7px solid $grey-dark;
+        border-bottom:7px solid $white;
         border-left:7px solid transparent;
         top: -7px;
         left: 50%;

@@ -56,8 +56,20 @@
             var $coin = $(this);
 
             $coin.click(function() {
+                var $diff = $coin.siblings('[data-coin-difference]');
+
                 $coin.toggleClass('flipped');
-                $coin.siblings('[data-coin-difference]').fadeToggle();
+
+                if($diff.css('display') === 'block') {
+                    $diff.fadeToggle();
+                }
+                else {
+                    setTimeout(function() {
+                        $diff.fadeToggle();
+                    }, 1000);
+                }
+
+
             })
         });
     }
