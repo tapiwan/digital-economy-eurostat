@@ -14,6 +14,8 @@
     <!-- Google Charts-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="scripts/turnover.js"></script>
+    <script src="scripts/e-sales.js"></script>
+    <script src="scripts/recruitment.js"></script>
 </head>
 <body>
     <!-- Page Wrapper -->
@@ -391,7 +393,7 @@
                 <div class="row">
                     <div class="col-6">
                         <h2 class="relative z-index-10">Turnover E-Sales</h2>
-                        <p class="relative z-index-10">The map on the right shows the percentage of e-sales in relation to total sales turnover. Hover over a specific country to see the shares of EDI-type sales and web sales.</p>
+                        <p class="relative z-index-10">The map on the right shows the percentage of e-sales in relation to total sales turnover. Click on a specific country to see the shares of EDI-type sales and web sales.</p>
                         <hr class="relative z-index-10">
                         <h3 id="pie-title" class="text-centered relative z-index-10">Land</h3>
                         <div class="text-centered relative">
@@ -416,7 +418,7 @@
                     <h2 class="col-10">E-Sales by type of customer</h2>
                     <p class="col-10">The following graphic focuses exclusively on web sales and presents information by type of customer. You can select a specific country in the dropdown.</p>
                 </div>
-                <div class="row">
+                <div class="row none">
                     <div class="col-2">
                         &nbsp;
                     </div>
@@ -476,6 +478,11 @@
                         <div class="circle circle-blue circle-xtra-small left-20 circle-fill circle-fill-right">
                             <span data-counter data-start="0" data-end="11" data-bubble-right></span>%
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="column-esales"></div>
                     </div>
                 </div>
             </div>
@@ -568,11 +575,13 @@
                             <h2>Recruitment of ICT specialists</h2>
                             <p>One in five enterprises in the EU-28 employs ICT specialists. Because of the quick growth of this department some businesses in certain countries have trouble filling vacancies.</p>
                             <hr>
-                            <h3 class="text-centered">EU-28</h3>
-                            <p class="text-centered">Bar Chart</p>
+                            <h3 id="bar-title" class="text-centered">Land</h3>
+                            <div id="bar-recruitment" style="width: 700px; height: 500px;">
+
+                            </div>
                         </div>
                         <div class="col-6">
-                            Karte
+                            <div id="map-recruitment" class="relative" style="width: 600px; height: 520px;"></div>
                         </div>
                     </div>
                 </div>

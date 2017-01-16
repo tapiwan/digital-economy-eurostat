@@ -2713,6 +2713,12 @@ select {
   transform-origin: 50% 100%;
   transform: rotateZ(-33deg); }
 
+/**
+ * Display
+ */
+.none {
+  display: none !important; }
+
 /**************************
  * Menu
  **************************/

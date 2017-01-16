@@ -1,5 +1,5 @@
 google.charts.load('upcoming', {
-    'packages': ['geochart', 'corechart']
+    'packages': ['geochart', 'corechart', 'bar']
 });
 
 google.charts.setOnLoadCallback(drawTurnoverMap);
