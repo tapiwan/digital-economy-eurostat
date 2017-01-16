@@ -144,10 +144,19 @@ a {
     position: absolute;
     z-index: 99;
 
+    &#crm-tooltip,
+    &#social-media-tooltip,
+    &#website-tooltip {
+        top: 105%;
+        border-bottom: 1px solid $grey-lightest;
+        border-left: 1px solid $grey-lightest;
+        border-right: 1px solid $grey-lightest;
+    }
+
     &#web-sales-tooltip {
-        left: -210px;
-        bottom: 15px;
-        width: 210px;
+        left: -150px;
+        bottom: 9px;
+        width: 170px;
 
         &:before {
             position: absolute;
@@ -160,15 +169,15 @@ a {
             border-top:7px solid transparent;
             top: auto;
             right: -7px;
-            bottom: 18px;
+            bottom: 11px;
             left: auto;
         }
     }
 
     &#edi-sales-tooltip {
-        right: -210px;
-        bottom: 15px;
-        width: 210px;
+        right: -150px;
+        bottom: 2px;
+        width: 170px;
 
         &:before {
             position: absolute;
