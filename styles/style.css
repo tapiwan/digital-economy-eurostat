@@ -2874,7 +2874,7 @@ select {
         left: -30px;
         top: -30px; }
         .circle-media-types .inner-circle .corner-top-left .difference {
-          left: -14px;
+          left: 92px;
           top: 0px; }
         .circle-media-types .inner-circle .corner-top-left .tooltip {
           left: -280px;
@@ -2898,7 +2898,7 @@ select {
         right: -30px;
         top: -30px; }
         .circle-media-types .inner-circle .corner-top-right .difference {
-          right: -14px;
+          right: 92px;
           top: 0px; }
         .circle-media-types .inner-circle .corner-top-right .tooltip {
           left: 165px;
@@ -2922,7 +2922,7 @@ select {
         left: -30px;
         bottom: -30px; }
         .circle-media-types .inner-circle .corner-bottom-left .difference {
-          left: -14px;
+          left: 92px;
           bottom: 0px; }
         .circle-media-types .inner-circle .corner-bottom-left .tooltip {
           left: -350px;
@@ -2946,7 +2946,7 @@ select {
         right: -30px;
         bottom: -30px; }
         .circle-media-types .inner-circle .corner-bottom-right .difference {
-          right: -14px;
+          right: 92px;
           bottom: 0px; }
         .circle-media-types .inner-circle .corner-bottom-right .tooltip {
           left: 185px;
