@@ -5,7 +5,6 @@
     (function init() {
         setInitialState();
         centerMenu();
-        centerVertically();
         initFullPage();
     })();
 
@@ -85,21 +84,6 @@
         });
     }
 
-    function centerVertically() {
-        var $els = $('[data-centerv]');
-
-        $els.each(function() {
-            $elHeight = $(this).height();
-
-            $(this).css({
-                "position": "relative",
-                "top": "50%",
-                "margin-top": -($elHeight/2)
-            });
-        });
-
-    }
-
     //Initialize fullPage plugin
     function initFullPage() {
         $('#fullpage').fullpage({
@@ -115,7 +99,7 @@
                 'sources'
             ],
             menu: '#menu',
-            afterLoad: function(anchorLink, index) {
+            afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
                 var loadedSection = $(this);
 
                 switch(index) {
@@ -147,6 +131,13 @@
                         initSectionNine(loadedSection);
                         break;
 
+                }
+            },
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+                var loadedSlide = $(this);
+
+                if(index == 4 && slideIndex == 1) {
+                    initSectionFourTwo(loadedSlide);
                 }
             }
         });
@@ -185,11 +176,20 @@
     }
 
     function initSectionFour(section) {
+        console.log('Firing...');
         if(!g.sectionFourLoaded) {
-            animateCounters(section);
+            animateCounters(section.find('.slide').first());
             loadTabs(section);
 
             g.sectionFourLoaded = true;
+        }
+    }
+
+    function initSectionFourTwo(section) {
+        if(!g.sectionFourTwoLoaded) {
+            animateCounters(section);
+
+            g.sectionFourTwoLoaded = true;
         }
     }
 

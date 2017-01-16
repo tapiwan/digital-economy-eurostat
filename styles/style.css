@@ -452,7 +452,7 @@ select {
 
 .tabs .tab {
   display: inline-block;
-  height: 60px;
+  height: 78px;
   width: auto;
   background-color: #E6E9ED;
   vertical-align: top;
@@ -460,6 +460,8 @@ select {
   padding: 5px 15px;
   border: 1px solid rgba(101, 109, 120, 0.3);
   cursor: pointer; }
+  .tabs .tab img {
+    height: 35px; }
   .tabs .tab:hover, .tabs .tab.active {
     background-color: #CCD1D9; }
   .tabs .tab-left {

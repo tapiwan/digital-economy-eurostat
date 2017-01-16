@@ -221,7 +221,7 @@ select {
 .tabs {
     .tab {
         display: inline-block;
-        height: 60px;
+        height: 78px;
         width: auto;
         background-color: $grey-lightest;
         vertical-align: top;
@@ -229,6 +229,10 @@ select {
         padding: 5px 15px;
         border: 1px solid transparentize($grey-light, 0.7);
         cursor: pointer;
+
+        img {
+            height: 35px;
+        }
 
         &:hover,
         &.active {
