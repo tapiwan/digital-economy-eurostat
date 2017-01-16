@@ -33,7 +33,9 @@ function drawTurnoverMap() {
         },
         datalessRegionColor: '#CCD1D9',
         defaultColor: '#A1ACBD',
-        region: '150'
+        region: '150',
+        height: 485,
+        keepAspectRatio: true
     };
 
     /**
