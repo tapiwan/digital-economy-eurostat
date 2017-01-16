@@ -2689,7 +2689,10 @@ select {
 #menu {
   position: fixed;
   right: 80px;
-  top: 50%; }
+  top: 50%;
+  background-color: #333333;
+  padding: 0 5px;
+  border-radius: 24px; }
   #menu ul {
     padding-left: 0; }
     #menu ul li {
@@ -2700,21 +2703,20 @@ select {
         margin-top: 0; }
       #menu ul li a {
         display: block;
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
         border-radius: 30px;
-        background-color: #333333; }
+        background-color: #FFFFFF; }
       #menu ul li.active a {
-        background-color: #FFFFFF;
-        border: 2px solid #333333; }
+        background-color: #B3D490; }
       #menu ul li .name {
         display: none; }
       #menu ul li:hover .name {
         display: block;
         position: absolute;
-        right: 40px;
-        top: 0;
-        background-color: white;
+        right: 30px;
+        top: -17px;
+        background-color: #FFFFFF;
         padding: 5px 10px;
         font-size: 12px;
         word-break: keep-all; }
@@ -2726,7 +2728,8 @@ select {
           border-top: 7px solid transparent;
           border-bottom: 7px solid transparent;
           border-left: 7px solid white;
-          right: -7px; }
+          right: -7px;
+          top: 8px; }
 
 /**************************
  * Sections
