@@ -476,6 +476,14 @@ select {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px; }
 
+/**
+ * Charts
+ */
+#pie-hole {
+  z-index: 99;
+  left: 282px;
+  top: 95px; }
+
 /**************************
  * Margin
  **************************/

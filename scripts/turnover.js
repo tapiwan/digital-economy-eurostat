@@ -14,13 +14,12 @@ function drawTurnoverMap() {
     var map_data = new google.visualization.DataTable();
 
     map_data.addColumn('string', 'Country');
-    map_data.addColumn('number', 'EDI-type sales');
-    map_data.addColumn('number', 'web sales');
+    map_data.addColumn('number', '% of total turnover');
 
     map_data.addRows([
-        ['Germany', 20, 60],
-        ['Brazil', 25, 55],
-        ['France', 10, 70]
+        ['Germany', 65],
+        ['France', 14],
+        //TODO: Add percentages of total turnover for all other countries
     ]);
 
     /**
@@ -34,8 +33,6 @@ function drawTurnoverMap() {
         datalessRegionColor: '#CCD1D9',
         defaultColor: '#A1ACBD',
         region: '150',
-        height: 485,
-        keepAspectRatio: true
     };
 
     /**
@@ -51,16 +48,9 @@ function drawTurnoverMap() {
         var selectedItem = map_turnover.getSelection()[0];
         if (selectedItem) {
             var country = map_data.getValue(selectedItem.row, 0);
-            var ediSales = map_data.getValue(selectedItem.row, 1);
-            var webSales = map_data.getValue(selectedItem.row, 2);
+            var turnover = map_data.getValue(selectedItem.row, 1);
 
-            var selectedData = {
-                country: country,
-                ediSales: ediSales,
-                webSales: webSales
-            };
-
-            drawTurnoverPie(selectedData);
+            drawTurnoverPie(country, turnover);
         }
     }
 
@@ -77,31 +67,42 @@ function drawTurnoverMap() {
     /**
      * Initialize PieChart
      */
-     drawTurnoverPie({
-         country: map_data.getValue(0, 0),
-         ediSales: map_data.getValue(0, 1),
-         webSales: map_data.getValue(0, 2)
-     });
+     drawTurnoverPie(map_data.getValue(0, 0), map_data.getValue(0, 1));
 }
 
 /**
  * Draw PieChart for Turnover E-Sales
  */
-function drawTurnoverPie(dataset) {
-    var titleEl = $('#pie-title').html(dataset.country);
+function drawTurnoverPie(country, turnover) {
+    var titleEl = $('#pie-title').html(country);
+    var turnoverEl = $('#pie-hole').find('#turnover').html(turnover+"%");
 
+    //E-Sales by type
+    var json = {
+        "Germany": {
+            ediSales: 10,
+            webSales: 20
+        },
+        "France": {
+            ediSales: 44,
+            webSales: 14
+        },
+        //TODO: Add percentages of edi and web sales for all other countries
+    }
+
+    //Get data by country
     var data = google.visualization.arrayToDataTable([
         ["Type of sales", "Percentage"],
-        ["EDI-type sales", dataset.ediSales],
-        ["Web sales", dataset.webSales],
-        ["Non e-sales", 100-dataset.ediSales-dataset.webSales]
+        ["EDI-type sales", json[country].ediSales],
+        ["Web sales", json[country].webSales],
+        ["Non e-sales", 100-json[country].ediSales-json[country].webSales]
     ]);
+
 
     var options = {
         backgroundColor: '#CCD1D9',
-        pieHole: 0.4,
+        pieHole: 0.6,
         colors: ['#B3DC86', '#80A953', '#405429'],
-        height: 300,
         legend: {
             alignment: "center",
             position: "left"

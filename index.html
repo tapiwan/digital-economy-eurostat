@@ -390,16 +390,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <h2>Turnover E-Sales</h2>
-                        <p>The map on the right shows the percentage of e-sales in relation to total sales turnover. Hover over a specific country to see the shares of EDI-type sales and web sales.</p>
-                        <hr>
-                        <h3 id="pie-title" class="text-centered">Land</h3>
-                        <div class="text-centered">
-                            <div id="pie-turnover"></div>
+                        <h2 class="relative z-index-10">Turnover E-Sales</h2>
+                        <p class="relative z-index-10">The map on the right shows the percentage of e-sales in relation to total sales turnover. Hover over a specific country to see the shares of EDI-type sales and web sales.</p>
+                        <hr class="relative z-index-10">
+                        <h3 id="pie-title" class="text-centered relative z-index-10">Land</h3>
+                        <div class="text-centered relative">
+                            <h3 id="pie-hole" class="absolute">
+                                <span id="turnover" class="text-medium text-bold"></span><br>
+                                Turnover<br>E-Sales
+                            </h3>
+                            <div id="pie-turnover" class="relative" style="width: 700px; height: 500px; left: -100px; top: -100px;"></div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div id="map-turnover"></div>
+                        <div id="map-turnover" class="relative" style="width: 600px; height: 520px;"></div>
                     </div>
                 </div>
             </div>
