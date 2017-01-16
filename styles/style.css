@@ -2890,9 +2890,10 @@ select {
             right: -7px;
             top: 14px; }
         .circle-media-types .inner-circle .corner-top-left .category {
-          top: -45px;
-          left: -90px;
-          text-align: left; }
+          top: -20px;
+          left: -340px;
+          width: 335px;
+          text-align: right; }
       .circle-media-types .inner-circle .corner-top-right {
         right: -30px;
         top: -30px; }
@@ -2913,9 +2914,10 @@ select {
             left: -7px;
             top: 14px; }
         .circle-media-types .inner-circle .corner-top-right .category {
-          top: -45px;
-          left: -85px;
-          text-align: right; }
+          top: -20px;
+          right: -340px;
+          width: 335px;
+          text-align: left; }
       .circle-media-types .inner-circle .corner-bottom-left {
         left: -30px;
         bottom: -30px; }
@@ -2936,9 +2938,10 @@ select {
             right: -7px;
             bottom: 18px; }
         .circle-media-types .inner-circle .corner-bottom-left .category {
-          bottom: -45px;
-          left: -240px;
-          text-align: left; }
+          bottom: -20px;
+          left: -340px;
+          width: 335px;
+          text-align: right; }
       .circle-media-types .inner-circle .corner-bottom-right {
         right: -30px;
         bottom: -30px; }
@@ -2959,9 +2962,10 @@ select {
             left: -7px;
             bottom: 18px; }
         .circle-media-types .inner-circle .corner-bottom-right .category {
-          bottom: -45px;
-          left: -85px;
-          text-align: right; }
+          bottom: -20px;
+          right: -340px;
+          width: 335px;
+          text-align: left; }
 
 /**************************
  * Pillars
