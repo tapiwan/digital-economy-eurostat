@@ -161,6 +161,7 @@
     function initSectionTwo(section) {
         if(!g.sectionTwoLoaded) {
             animateCounters(section);
+            animateSpeedo(section);
 
             //Mark section two as loaded
             g.sectionTwoLoaded = true;
@@ -246,6 +247,38 @@
                     clearInterval(interval);
                 }
             }, 10);
+        });
+    }
+
+    function animateSpeedo(section) {
+        section.find('[data-arrow]').each(function() {
+            var $this = $(this),
+            $start = $this.data('start'),
+            $end  = $this.data('end');
+
+            var interval = setInterval(function() {
+                if($start <= $end) {
+                    $this.css('transform', 'rotateZ('+($start++)+'deg)')
+                }
+                else {
+                    clearInterval(interval);
+                }
+            }, 10);
+        });
+
+        section.find('[data-mbit]').each(function() {
+            var $this = $(this),
+                $start = $this.data('start'),
+                $end  = $this.data('end');
+
+            var interval = setInterval(function() {
+                if($start <= $end) {
+                    $this.html($start++);
+                }
+                else {
+                    clearInterval(interval);
+                }
+            }, 25);
         });
     }
 

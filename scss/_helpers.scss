@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-@for $i from 0 through 125 {
+@for $i from 0 through 180 {
     .margin-top-#{$i} {
         margin-top: $i#{px};
     }
@@ -205,14 +205,6 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-}
-
-.speedo-arrow {
-    left: 107px;
-    top: 90px;
-    width: 45px;
-    transform-origin: 50% 100%;
-    transform: rotateZ(-33deg);
 }
 
 /**

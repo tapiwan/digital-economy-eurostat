@@ -268,3 +268,42 @@ select {
     left: 282px;
     top: 95px;
 }
+
+/**
+ * Speedo
+ */
+.speedometer {
+    .speedo-bg {
+        width: 248px;
+        position: absolute;
+        top: 11px;
+        left: 11px;
+    }
+
+    .speedo-arrow {
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        top: 57px;
+        width: 20px;
+        transform-origin: 50% 90%;
+        transform: rotateZ(-120deg);
+
+        &.opaque {
+            opacity: 0.25;
+        }
+    }
+
+    .speedo-mbit {
+        position: absolute;
+        width: 77px;
+        left: 50%;
+        padding: 0 5px;
+        margin-left: -38.5px;
+        bottom: 50px;
+        font-size: 14px;
+        text-align: right;
+        background-color: #333;
+        color: $white;
+    }
+}
