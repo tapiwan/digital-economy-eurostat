@@ -26,6 +26,7 @@ function drawTurnoverMap() {
         ['Germany', 65],
         ['France', 14],
         //TODO: Add percentages of total turnover for all other countries
+        //A country name as a string (for example, "England") (doch nicht ISO :P)
     ]);
 
     /**
@@ -93,7 +94,8 @@ function drawTurnoverPie(country, turnover) {
             ediSales: 44,
             webSales: 14
         },
-        //TODO: Add percentages of edi and web sales for all other countries
+        //TODO: Add percentages of edi and web sales for all other countries,
+        //non e-sales get calculated automatically
     }
 
     //Get data by country
@@ -161,12 +163,11 @@ function drawRecruitmentMap() {
     var map_data = new google.visualization.DataTable();
 
     map_data.addColumn('string', 'Country');
-    map_data.addColumn('number', '% of total turnover');
 
     map_data.addRows([
-        ['Germany', 65],
-        ['France', 14],
-        //TODO: Add percentages of total turnover for all other countries
+        ['Germany'],
+        ['France'],
+        //TODO: Add all countries that can be clicked
     ]);
 
     /**
@@ -174,11 +175,8 @@ function drawRecruitmentMap() {
      */
     var map_options = {
         backgroundColor: '#E6E9ED',
-        colorAxis: {
-            colors: ['#B3DC86', '#A0D468', '#80A953', '#607F3E', '#405429']
-        },
         datalessRegionColor: '#E6E9ED',
-        defaultColor: '#A1ACBD',
+        defaultColor: '#4FC1E9',
         region: '150',
     };
 
@@ -219,6 +217,46 @@ function drawRecruitmentMap() {
 /**
  * Draw PieChart for Turnover E-Sales
  */
-function drawRecruitmentBar(country, turnover) {
+function drawRecruitmentBar(country) {
     var titleEl = $('#bar-title').html(country);
+
+    //Difficulties by country
+    var json = {
+        "Germany": {
+            difficulties: 5,
+            noDifficulties: 10
+        },
+        "France": {
+            difficulties: 7,
+            noDifficulties: 17
+        }
+    }
+
+    //Get data by country
+    var bar_data = google.visualization.arrayToDataTable([
+        ["Type", "Percentage", { role: 'style' }],
+        ["Difficulties recruiting", json[country].difficulties, '#4FC1E9'],
+        ["No difficulties recruiting", json[country].noDifficulties, '#A0D468']
+    ]);
+
+    var bar_options = {
+      backgroundColor: 'transparent',
+      chartArea: {
+          left: 40
+      },
+      vAxis: {
+          baselineColor: '#333333',
+          gridlines: {
+              color: '#CCD1D9'
+          }
+      },
+      legend: {
+          position: 'none'
+      },
+      colors: ['#A3D7E9', '#4FC1E9']
+    };
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('bar-recruitment'));
+
+    chart.draw(bar_data, bar_options);
 }

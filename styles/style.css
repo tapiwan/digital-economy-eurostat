@@ -2629,6 +2629,9 @@ select {
 /**************************
  * Height/Width
  **************************/
+.height-300 {
+  height: 300px; }
+
 .height-280 {
   height: 280px; }
 
