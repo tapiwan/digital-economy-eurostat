@@ -25,8 +25,10 @@ function drawTurnoverMap() {
     map_data.addRows([
         ['Germany', 65],
         ['France', 14],
+        //********************************************************
         //TODO: Add percentages of total turnover for all other countries
-        //A country name as a string (for example, "England") (doch nicht ISO :P)
+        //NOTE: A country name is a string (for example, "England") (doch nicht ISO :P)
+        //********************************************************
     ]);
 
     /**
@@ -94,8 +96,10 @@ function drawTurnoverPie(country, turnover) {
             ediSales: 44,
             webSales: 14
         },
+        //********************************************************
         //TODO: Add percentages of edi and web sales for all other countries,
-        //non e-sales get calculated automatically
+        //NOTE: non e-sales get calculated automatically
+        //********************************************************
     }
 
     //Get data by country
@@ -128,7 +132,11 @@ function drawColumnChart() {
           ['Germany', 1000, 400],
           ['France', 1170, 460],
           ['Brazil', 660, 1120],
-          ['Netherlands', 1030, 540]
+          ['Netherlands', 1030, 540],
+          //********************************************************
+          //TODO: Add B2B and B2C/B2G percentages for all countries
+          //NOTE: Fix current numbers (were for testing)
+          //********************************************************
         ]);
 
         var bar_options = {
@@ -167,7 +175,10 @@ function drawRecruitmentMap() {
     map_data.addRows([
         ['Germany'],
         ['France'],
+        //********************************************************
         //TODO: Add all countries that can be clicked
+        //NOTE: Only the country names
+        //********************************************************
     ]);
 
     /**
@@ -229,7 +240,10 @@ function drawRecruitmentBar(country) {
         "France": {
             difficulties: 7,
             noDifficulties: 17
-        }
+        },
+        //********************************************************
+        //TODO: Add difficulty and no difficulty percentages for all countries
+        //********************************************************
     }
 
     //Get data by country
