@@ -29,6 +29,10 @@
     }
 }
 
+.float-right {
+    float: right;
+}
+
 /**************************
  * Padding
  **************************/
@@ -113,6 +117,23 @@
 
  .width-225 {
      width: 225px;
+ }
+
+ .zero {
+     width: 0;
+     height: 0;
+ }
+
+ .border-left {
+     border-left: 2px solid #333;
+ }
+
+ .border-right {
+     border-right: 2px solid #333;
+ }
+
+ .border-bottom {
+     border-bottom: 2px solid #333;
  }
 
 /**************************

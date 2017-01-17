@@ -197,6 +197,7 @@
     function initSectionFive(section) {
         if(!g.sectionFiveLoaded) {
             animateCounters(section);
+            animateLines(section);
 
             g.sectionFiveLoaded = true;
         }
@@ -247,6 +248,22 @@
                     clearInterval(interval);
                 }
             }, 10);
+        });
+    }
+
+    function animateLines(section) {
+        section.find('[data-line]').each(function() {
+            $this = $(this),
+            $height = $this.data('height'),
+            $width  = $this.data('width');
+
+            $this.animate({
+                height: $height
+            }, 500, function() {
+                $(this).animate({
+                    width: $width
+                }, 500);
+            });
         });
     }
 

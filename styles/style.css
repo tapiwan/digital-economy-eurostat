@@ -393,8 +393,8 @@ a {
     border-left: 1px solid #E6E9ED;
     border-right: 1px solid #E6E9ED; }
   .tooltip-generic#web-sales-tooltip {
-    left: -150px;
-    bottom: 9px;
+    left: -220px;
+    bottom: -18px;
     width: 170px; }
     .tooltip-generic#web-sales-tooltip:before {
       position: absolute;
@@ -410,8 +410,8 @@ a {
       bottom: 11px;
       left: auto; }
   .tooltip-generic#edi-sales-tooltip {
-    right: -150px;
-    bottom: 2px;
+    right: -220px;
+    bottom: -24px;
     width: 170px; }
     .tooltip-generic#edi-sales-tooltip:before {
       position: absolute;
@@ -1613,6 +1613,9 @@ select {
 
 .margin-right-60 {
   margin-right: 60px; }
+
+.float-right {
+  float: right; }
 
 /**************************
  * Padding
@@ -2834,6 +2837,19 @@ select {
 
 .width-225 {
   width: 225px; }
+
+.zero {
+  width: 0;
+  height: 0; }
+
+.border-left {
+  border-left: 2px solid #333; }
+
+.border-right {
+  border-right: 2px solid #333; }
+
+.border-bottom {
+  border-bottom: 2px solid #333; }
 
 /**************************
  * Text
