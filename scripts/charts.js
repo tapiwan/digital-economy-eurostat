@@ -23,8 +23,38 @@ function drawTurnoverMap() {
     map_data.addColumn('number', '% of total turnover');
 
     map_data.addRows([
-        ['Germany', 65],
-        ['France', 14],
+        ['Germany', 17],
+        ['France', 18],
+        ['Irland', 37],
+        ['Czech Republic', 29],
+        ['Slovakia', 21],
+        ['Finland', 21],
+        ['Hungary', 20],
+        ['Sweden', 20],
+        ['United Kingdom', 20],
+        ['Denmark', 19],
+        ['Portugal', 17],
+        ['Austria', 15],
+        ['Belgium', 14],
+        ['Estonia', 14],
+        ['Spain', 14],
+        ['Croatia', 14],
+        ['Netherlands', 14],
+        ['Poland', 13],
+        ['Slovenia', 13],
+        ['Lithuania', 10],
+        ['Italy', 9],
+        ['Malta', 9],
+        ['Latvia', 7],
+        ['Cyprus', 6],
+        ['Romania', 6],
+        ['Bulgaria', 5],
+        ['Greece', 1],
+        ['Luxembourg', 1],
+        ['Norway', 19],
+        ['Iceland', 14],
+        ['Serbia', 6],
+        ['FYR of Macedonia', 2],
         //********************************************************
         //TODO: Add percentages of total turnover for all other countries
         //NOTE: A country name is a string (for example, "England") (doch nicht ISO :P)
@@ -89,13 +119,134 @@ function drawTurnoverPie(country, turnover) {
     //E-Sales by type
     var json = {
         "Germany": {
-            ediSales: 10,
-            webSales: 20
+            ediSales: 11,
+            webSales: 6
         },
         "France": {
-            ediSales: 44,
-            webSales: 14
+            ediSales: 13,
+            webSales: 5
         },
+        "Ireland": {
+            ediSales: 22,
+            webSales: 15
+        },
+        "Czech Republic": {
+            ediSales: 24,
+            webSales: 5
+        },
+        "Slovakia": {
+            ediSales: 16,
+            webSales: 5
+        },
+        "Finland": {
+            ediSales: 16,
+            webSales: 5
+        },
+        "Hungary": {
+            ediSales: 15,
+            webSales: 5
+        },
+        "Sweden": {
+            ediSales: 12,
+            webSales: 8
+        },
+        "United Kingdom": {
+            ediSales: 13,
+            webSales: 7
+        },
+        "Denmark": {
+            ediSales: 14,
+            webSales: 5
+        },
+        "Portugal": {
+            ediSales: 10,
+            webSales: 7
+        },
+        "Austria": {
+            ediSales: 13,
+            webSales: 2
+        },
+        "Belgium": {
+            ediSales: 9,
+            webSales: 5
+        },
+        "Estonia": {
+            ediSales: 9,
+            webSales: 5
+        },
+        "Spain": {
+            ediSales: 10,
+            webSales: 4
+        },
+        "Croatia": {
+            ediSales: 9,
+            webSales: 5
+        },
+        "Netherlands": {
+            ediSales: 8,
+            webSales: 6
+        },
+        "Poland": {
+            ediSales: 9,
+            webSales: 4
+        },
+        "Slovenia": {
+            ediSales: 11,
+            webSales: 2
+        },
+        "Lithuania": {
+            ediSales: 5,
+            webSales: 5
+        },
+        "Italy": {
+            ediSales: 7,
+            webSales: 2
+        },
+        "Malta": {
+            ediSales: 6,
+            webSales: 3
+        },
+        "Latvia": {
+            ediSales: 3,
+            webSales: 4
+        },
+        "Cyprus": {
+            ediSales: 2,
+            webSales: 4
+        },
+        "Romania": {
+            ediSales: 4,
+            webSales: 2
+        },
+        "Bulgaria": {
+            ediSales: 3,
+            webSales: 2
+        },
+        "Greece": {
+            ediSales: 0,
+            webSales: 1
+        },
+        "Luxembourg": {
+            ediSales: 1,
+            webSales: 0
+        },
+        "Norway": {
+            ediSales: 11,
+            webSales: 8
+        },
+        "Iceland": {
+            ediSales: 9,
+            webSales: 5
+        },
+        "Serbia": {
+            ediSales: 0,
+            webSales: 6
+        },
+        "FYR of Macedonia": {
+            ediSales: 1,
+            webSales: 1
+        },
+
         //********************************************************
         //TODO: Add percentages of edi and web sales for all other countries,
         //NOTE: non e-sales get calculated automatically
@@ -128,11 +279,40 @@ function drawTurnoverPie(country, turnover) {
 
 function drawColumnChart() {
     var data = google.visualization.arrayToDataTable([
-          ['Country', 'B2B', 'B2C/B2G'],
-          ['Germany', 1000, 400],
-          ['France', 1170, 460],
-          ['Brazil', 660, 1120],
-          ['Netherlands', 1030, 540],
+          ['Country', 'B2C', 'B2B/B2G'],
+          ['Germany', 16, 18],
+          ['France', 12, 10],
+          ['Portugal', 10, 8],
+          ['Netherlands', 13, 16],
+          ['Sweden', 14, 17],
+          ['Belgium', 18, 16],
+          ['Czech Republik', 17, 16],
+          ['Denmark', 17, 15],
+          ['Ireland', 23, 14],
+          ['Croatia', 12, 14],
+          ['Lithuania', 15, 12],
+          ['Finland', 11, 12],
+          ['Malta', 16, 11],
+          ['United Kingdom', 15, 11],
+          ['Slovenia', 13, 10],
+          ['Estonia', 10, 10],
+          ['Spain', 9, 10],
+          ['Slovakia', 9, 9],
+          ['Austria', 11, 8],
+          ['Hungary', 9, 8],
+          ['Poland', 7, 7],
+          ['Latvia', 6, 6],
+          ['Luxembourg', 5, 6],
+          ['Bulgaria', 6, 5],
+          ['Italy', 6, 5],
+          ['Cyprus', 9, 4],
+          ['Greece', 6, 4],
+          ['Romania', 6, 4],
+          ['Norway', 16, 17],
+          ['Serbia', 15, 15],
+          ['Iceland', 12, 11],
+          ['Turkey', 9, 7],
+          ['FYR of Macedonia', 2, 1],
           //********************************************************
           //TODO: Add B2B and B2C/B2G percentages for all countries
           //NOTE: Fix current numbers (were for testing)
@@ -173,8 +353,38 @@ function drawRecruitmentMap() {
     map_data.addColumn('string', 'Country');
 
     map_data.addRows([
-        ['Germany'],
-        ['France'],
+      ['Germany'],
+      ['France'],
+      ['Irland'],
+      ['Czech Republic'],
+      ['Slovakia'],
+      ['Finland'],
+      ['Hungary'],
+      ['Sweden'],
+      ['United Kingdom'],
+      ['Denmark'],
+      ['Portugal'],
+      ['Austria'],
+      ['Belgium'],
+      ['Estonia'],
+      ['Spain'],
+      ['Croatia'],
+      ['Netherlands'],
+      ['Poland'],
+      ['Slovenia'],
+      ['Lithuania'],
+      ['Italy'],
+      ['Malta'],
+      ['Latvia'],
+      ['Cyprus'],
+      ['Romania'],
+      ['Bulgaria'],
+      ['Greece'],
+      ['Luxembourg'],
+      ['Norway'],
+      ['Iceland'],
+      ['Serbia'],
+      ['FYR of Macedonia'],
         //********************************************************
         //TODO: Add all countries that can be clicked
         //NOTE: Only the country names
@@ -234,12 +444,132 @@ function drawRecruitmentBar(country) {
     //Difficulties by country
     var json = {
         "Germany": {
-            difficulties: 5,
-            noDifficulties: 10
+            difficulties: 4.1,
+            noDifficulties: 3.9
         },
         "France": {
-            difficulties: 7,
-            noDifficulties: 17
+            difficulties: 3,
+            noDifficulties: 4.2
+        },
+        "Ireland": {
+          difficulties: 4.5,
+          noDifficulties: 4.5
+        },
+        "Czech Republic": {
+          difficulties: 3,
+          noDifficulties: 2.1
+        },
+        "Slovakia": {
+          difficulties: 2.6,
+          noDifficulties: 3.1
+        },
+        "Finland": {
+          difficulties: 3.3,
+          noDifficulties: 6.2
+        },
+        "Hungary": {
+          difficulties: 4.6,
+          noDifficulties: 5
+        },
+        "Sweden": {
+          difficulties: 4.3,
+          noDifficulties: 4.7
+        },
+        "United Kingdom": {
+          difficulties: 4.2,
+          noDifficulties: 6.8
+        },
+        "Denmark": {
+          difficulties: 4.6,
+          noDifficulties: 6.7
+        },
+        "Portugal": {
+          difficulties: 1.3,
+          noDifficulties: 4.9
+        },
+        "Austria": {
+          difficulties: 4.5,
+          noDifficulties: 3.5
+        },
+        "Belgium": {
+          difficulties: 5.3,
+          noDifficulties: 6.5
+        },
+        "Estonia": {
+          difficulties: 2.9,
+          noDifficulties: 2.9
+        },
+        "Spain": {
+          difficulties: 1.6,
+          noDifficulties: 10.3
+        },
+        "Croatia": {
+          difficulties: 2.3,
+          noDifficulties: 4.5
+        },
+        "Netherlands": {
+          difficulties: 4.5,
+          noDifficulties: 3.9
+        },
+        "Poland": {
+          difficulties: 2,
+          noDifficulties: 3.3
+        },
+        "Slovenia": {
+          difficulties: 3,
+          noDifficulties: 3
+        },
+        "Lithuania": {
+          difficulties: 3.5,
+          noDifficulties: 4
+        },
+        "Italy": {
+          difficulties: 1.2,
+          noDifficulties: 3.3
+        },
+        "Malta": {
+          difficulties: 7.2,
+          noDifficulties: 6.8
+        },
+        "Latvia": {
+          difficulties: 2.1,
+          noDifficulties: 2.6
+        },
+        "Cyprus": {
+          difficulties: 3.2,
+          noDifficulties: 4.1
+        },
+        "Romania": {
+          difficulties: 1,
+          noDifficulties: 2.5
+        },
+        "Bulgaria": {
+          difficulties: 3.1,
+          noDifficulties: 6.6
+        },
+        "Greece": {
+          difficulties: 1.5,
+          noDifficulties: 3.2
+        },
+        "Luxembourg": {
+          difficulties: 6.5,
+          noDifficulties: 4.5
+        },
+        "Norway": {
+          difficulties: 2.6,
+          noDifficulties: 5.6
+        },
+        "Iceland": {
+          difficulties: 2,
+          noDifficulties: 4.5
+        },
+        "Serbia": {
+          difficulties: 1.5,
+          noDifficulties: 4.6
+        },
+        "FYR of Macedonia": {
+          difficulties: 1.5,
+          noDifficulties: 3.5
         },
         //********************************************************
         //TODO: Add difficulty and no difficulty percentages for all countries
