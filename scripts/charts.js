@@ -25,7 +25,7 @@ function drawTurnoverMap() {
     map_data.addRows([
         ['Germany', 17],
         ['France', 18],
-        ['Irland', 37],
+        ['Ireland', 37],
         ['Czech Republic', 29],
         ['Slovakia', 21],
         ['Finland', 21],
@@ -355,7 +355,7 @@ function drawRecruitmentMap() {
     map_data.addRows([
       ['Germany'],
       ['France'],
-      ['Irland'],
+      ['Ireland'],
       ['Czech Republic'],
       ['Slovakia'],
       ['Finland'],
