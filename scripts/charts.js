@@ -245,12 +245,7 @@ function drawTurnoverPie(country, turnover) {
         "FYR of Macedonia": {
             ediSales: 1,
             webSales: 1
-        },
-
-        //********************************************************
-        //TODO: Add percentages of edi and web sales for all other countries,
-        //NOTE: non e-sales get calculated automatically
-        //********************************************************
+        }
     }
 
     //Get data by country
@@ -312,11 +307,7 @@ function drawColumnChart() {
           ['Serbia', 15, 15],
           ['Iceland', 12, 11],
           ['Turkey', 9, 7],
-          ['FYR of Macedonia', 2, 1],
-          //********************************************************
-          //TODO: Add B2B and B2C/B2G percentages for all countries
-          //NOTE: Fix current numbers (were for testing)
-          //********************************************************
+          ['FYR of Macedonia', 2, 1]
         ]);
 
         var bar_options = {
@@ -384,11 +375,7 @@ function drawRecruitmentMap() {
       ['Norway'],
       ['Iceland'],
       ['Serbia'],
-      ['FYR of Macedonia'],
-        //********************************************************
-        //TODO: Add all countries that can be clicked
-        //NOTE: Only the country names
-        //********************************************************
+      ['FYR of Macedonia']
     ]);
 
     /**
@@ -397,7 +384,7 @@ function drawRecruitmentMap() {
     var map_options = {
         backgroundColor: '#E6E9ED',
         datalessRegionColor: '#E6E9ED',
-        defaultColor: '#4FC1E9',
+        defaultColor: '#9FAABC',
         region: '150',
     };
 
@@ -430,13 +417,13 @@ function drawRecruitmentMap() {
     map_recruitment.draw(map_data, map_options);
 
     /**
-     * Initialize PieChart
+     * Initialize BarChart
      */
      drawRecruitmentBar(map_data.getValue(0, 0));
 }
 
 /**
- * Draw PieChart for Turnover E-Sales
+ * Draw BarChart for Recruitment Difficulties
  */
 function drawRecruitmentBar(country) {
     var titleEl = $('#bar-title').html(country);
@@ -570,10 +557,7 @@ function drawRecruitmentBar(country) {
         "FYR of Macedonia": {
           difficulties: 1.5,
           noDifficulties: 3.5
-        },
-        //********************************************************
-        //TODO: Add difficulty and no difficulty percentages for all countries
-        //********************************************************
+        }
     }
 
     //Get data by country
@@ -596,8 +580,7 @@ function drawRecruitmentBar(country) {
       },
       legend: {
           position: 'none'
-      },
-      colors: ['#A3D7E9', '#4FC1E9']
+      }
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('bar-recruitment'));
