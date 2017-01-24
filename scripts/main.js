@@ -94,7 +94,7 @@
                 'enterprises-using-social-media',
                 'enterprises-engage-in-e-commerce',
                 'turnover-of-e-sales',
-                'e-sales-by-type-of-customer',
+                'web-sales-by-type-of-customer',
                 'employment-of-ict-specialists',
                 'sources'
             ],

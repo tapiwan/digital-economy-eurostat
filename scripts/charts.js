@@ -274,40 +274,40 @@ function drawTurnoverPie(country, turnover) {
 
 function drawColumnChart() {
     var data = google.visualization.arrayToDataTable([
-          ['Country', 'B2C', 'B2B/B2G'],
-          ['Germany', 16, 18],
-          ['France', 12, 10],
-          ['Portugal', 10, 8],
-          ['Netherlands', 13, 16],
-          ['Sweden', 14, 17],
-          ['Belgium', 18, 16],
-          ['Czech Republik', 17, 16],
-          ['Denmark', 17, 15],
-          ['Ireland', 23, 14],
-          ['Croatia', 12, 14],
-          ['Lithuania', 15, 12],
-          ['Finland', 11, 12],
-          ['Malta', 16, 11],
-          ['United Kingdom', 15, 11],
-          ['Slovenia', 13, 10],
-          ['Estonia', 10, 10],
-          ['Spain', 9, 10],
-          ['Slovakia', 9, 9],
-          ['Austria', 11, 8],
-          ['Hungary', 9, 8],
-          ['Poland', 7, 7],
-          ['Latvia', 6, 6],
-          ['Luxembourg', 5, 6],
-          ['Bulgaria', 6, 5],
-          ['Italy', 6, 5],
-          ['Cyprus', 9, 4],
-          ['Greece', 6, 4],
-          ['Romania', 6, 4],
-          ['Norway', 16, 17],
-          ['Serbia', 15, 15],
-          ['Iceland', 12, 11],
-          ['Turkey', 9, 7],
-          ['FYR of Macedonia', 2, 1]
+          ['Country', 'Business to customer', 'Business to business/government'],
+          ['Germany', 0.16, 0.18],
+          ['France', 0.12, 0.10],
+          ['Portugal', 0.10, 0.08],
+          ['Netherlands', 0.13, 0.16],
+          ['Sweden', 0.14, 0.17],
+          ['Belgium', 0.18, 0.16],
+          ['Czech Republik', 0.17, 0.16],
+          ['Denmark', 0.17, 0.15],
+          ['Ireland', 0.23, 0.14],
+          ['Croatia', 0.12, 0.14],
+          ['Lithuania', 0.15, 0.12],
+          ['Finland', 0.11, 0.12],
+          ['Malta', 0.16, 0.11],
+          ['United Kingdom', 0.15, 0.11],
+          ['Slovenia', 0.13, 0.10],
+          ['Estonia', 0.10, 0.10],
+          ['Spain', 0.09, 0.10],
+          ['Slovakia', 0.09, 0.09],
+          ['Austria', 0.11, 0.08],
+          ['Hungary', 0.09, 0.08],
+          ['Poland', 0.07, 0.07],
+          ['Latvia', 0.06, 0.06],
+          ['Luxembourg', 0.05, 0.06],
+          ['Bulgaria', 0.06, 0.05],
+          ['Italy', 0.06, 0.05],
+          ['Cyprus', 0.09, 0.04],
+          ['Greece', 0.06, 0.04],
+          ['Romania', 0.06, 0.04],
+          ['Norway', 0.16, 0.17],
+          ['Serbia', 0.15, 0.15],
+          ['Iceland', 0.12, 0.11],
+          ['Turkey', 0.09, 0.07],
+          ['FYR of Macedonia', 0.02, 0.01]
         ]);
 
         var bar_options = {
@@ -316,14 +316,24 @@ function drawColumnChart() {
               left: 60
           },
           vAxis: {
+              format: '#%',
               baselineColor: '#333333',
               gridlines: {
-                  color: '#B3DC86'
+                  color: '#CAE1B1'
               }
           },
-          legend: {
-              position: 'bottom'
+          hAxis: {
+              textStyle: {
+                fontSize: 10
+              },
+              slantedText: true,
+              slantedTextAngle: 90
           },
+          legend: {
+              position: 'in',
+              alignment: 'end'
+          },
+          height: 400,
           colors: ['#80A953', '#405429']
         };
 
