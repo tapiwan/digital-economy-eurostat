@@ -213,7 +213,6 @@
     function initSectionSeven(section) {
         if(!g.sectionSevenLoaded) {
             animateCounters(section);
-            loadDropdown(section);
 
             g.sectionSevenLoaded = true;
         }
@@ -271,31 +270,18 @@
         section.find('[data-arrow]').each(function() {
             var $this = $(this),
             $start = $this.data('start'),
-            $end  = $this.data('end');
+            $end  = $this.data('end'),
+            $year = $($this.data('year'));
 
             var interval = setInterval(function() {
                 if($start <= $end) {
                     $this.css('transform', 'rotateZ('+($start++)+'deg)')
                 }
                 else {
+                    $year.fadeIn();
                     clearInterval(interval);
                 }
             }, 10);
-        });
-
-        section.find('[data-mbit]').each(function() {
-            var $this = $(this),
-                $start = $this.data('start'),
-                $end  = $this.data('end');
-
-            var interval = setInterval(function() {
-                if($start <= $end) {
-                    $this.html($start++);
-                }
-                else {
-                    clearInterval(interval);
-                }
-            }, 25);
         });
     }
 
@@ -345,23 +331,6 @@
                         $svvitch.html($percentage);
                     });
                 });
-        });
-    }
-
-    function loadDropdown(section) {
-        var bubbleLeft = section.find('[data-bubble-left]'),
-            bubbleRight = section.find('[data-bubble-right]');
-
-        section.find('[data-dropdown]').change(function() {
-            var opt = $(this).find('option:selected'),
-                b2cValue = opt.data('b2c'),
-                b2bgValue = opt.data('b2bg');
-
-            bubbleLeft.html(b2cValue);
-            bubbleRight.html(b2bgValue);
-
-            bubbleLeft.parent().css("background-size", "100% "+b2cValue+"%");
-            bubbleRight.parent().css("background-size", "100% "+b2bgValue+"%");
         });
     }
 

@@ -280,6 +280,34 @@ select {
         left: 11px;
     }
 
+    .speedo-year {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        transform-origin: 50% 90%;
+        color: $grey-light;
+
+        &#year-2011 {
+            transform: rotateZ(-3deg);
+            top: 105px;
+            left: 85px;
+        }
+
+        &#year-2013 {
+            transform: rotateZ(-62deg);
+            top: 75px;
+            left: 133px;
+        }
+
+        &#year-2015 {
+            transform: rotateZ(-3deg);
+            top: 100px;
+            left: 165px;
+        }
+    }
+
     .speedo-arrow {
         position: absolute;
         left: 50%;

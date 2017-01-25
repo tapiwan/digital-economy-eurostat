@@ -493,6 +493,27 @@ select {
   top: 11px;
   left: 11px; }
 
+.speedometer .speedo-year {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  transform-origin: 50% 90%;
+  color: #656D78; }
+  .speedometer .speedo-year#year-2011 {
+    transform: rotateZ(-3deg);
+    top: 105px;
+    left: 85px; }
+  .speedometer .speedo-year#year-2013 {
+    transform: rotateZ(-62deg);
+    top: 75px;
+    left: 133px; }
+  .speedometer .speedo-year#year-2015 {
+    transform: rotateZ(-3deg);
+    top: 100px;
+    left: 165px; }
+
 .speedometer .speedo-arrow {
   position: absolute;
   left: 50%;
