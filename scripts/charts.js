@@ -333,7 +333,7 @@ function drawColumnChart() {
               position: 'in',
               alignment: 'end'
           },
-          height: 400,
+          height: 420,
           colors: ['#80A953', '#405429']
         };
 
