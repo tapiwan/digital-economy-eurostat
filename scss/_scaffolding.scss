@@ -53,7 +53,7 @@ a {
     color: $grey-dark;
 
     &.light {
-        color: $grey-light;
+        color: $white;
     }
 }
 
@@ -123,11 +123,12 @@ a {
 /*
  * Hand with phone
  */
-#hand-with-phone {
+#hand-with-tablet {
     position: absolute;
-    left: -10px;
-    top: 6px;
+    left: 5px;
+    top: 20px;
     z-index: 2;
+    width: 350px;
 }
 
 /**
@@ -334,4 +335,42 @@ select {
         background-color: #333;
         color: $white;
     }
+}
+
+#select-country {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    z-index: 9999;
+    width: 190px;
+}
+
+#click-me {
+    position: absolute;
+    top: 45px;
+    left: -135px;
+    z-index: 9999;
+    width: 110px;
+}
+
+a.btn {
+    background-color: transparent;
+    color: $white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid $white;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $grey-darkest;
+        color: $white;
+    }
+}
+
+.modal {
+    padding: 20px;
+    position: fixed;
+    width: 30%;
 }

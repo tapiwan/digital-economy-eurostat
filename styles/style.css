@@ -285,7 +285,7 @@ h4 {
 a {
   color: #434A54; }
   a.light {
-    color: #656D78; }
+    color: #FFFFFF; }
 
 /**************************
  * Text
@@ -369,11 +369,12 @@ a {
 /*
  * Hand with phone
  */
-#hand-with-phone {
+#hand-with-tablet {
   position: absolute;
-  left: -10px;
-  top: 6px;
-  z-index: 2; }
+  left: 5px;
+  top: 20px;
+  z-index: 2;
+  width: 350px; }
 
 /**
  * Tooltip
@@ -536,6 +537,38 @@ select {
   text-align: right;
   background-color: #333;
   color: #FFFFFF; }
+
+#select-country {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  z-index: 9999;
+  width: 190px; }
+
+#click-me {
+  position: absolute;
+  top: 45px;
+  left: -135px;
+  z-index: 9999;
+  width: 110px; }
+
+a.btn {
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; }
+  a.btn:hover {
+    background-color: #333333;
+    color: #FFFFFF; }
+
+.modal {
+  padding: 20px;
+  position: fixed;
+  width: 30%; }
 
 /**************************
  * Margin
@@ -3055,10 +3088,12 @@ select {
     margin: 0 auto;
     max-width: 100%; }
   .circle .text-columnized {
-    width: 80px;
+    width: 130px;
     display: block;
     margin: 0 auto;
-    text-align: left; }
+    text-align: center;
+    top: 4px;
+    left: 3px; }
 
 .circle-media-types {
   position: relative;
