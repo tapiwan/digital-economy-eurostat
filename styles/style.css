@@ -552,23 +552,17 @@ select {
   z-index: 9999;
   width: 110px; }
 
-a.btn {
-  background-color: transparent;
-  color: #FFFFFF;
-  padding: 5px 10px;
-  border-radius: 3px;
-  border: 1px solid #FFFFFF;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none; }
-  a.btn:hover {
-    background-color: #333333;
-    color: #FFFFFF; }
-
-.modal {
-  padding: 20px;
-  position: fixed;
-  width: 30%; }
+ul.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px; }
+  ul.link-list li.title {
+    font-size: 16px;
+    opacity: 1;
+    margin-bottom: 8px; }
+  ul.link-list li {
+    opacity: 0.6; }
 
 /**************************
  * Margin

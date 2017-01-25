@@ -353,24 +353,19 @@ select {
     width: 110px;
 }
 
-a.btn {
-    background-color: transparent;
-    color: $white;
-    padding: 5px 10px;
-    border-radius: 3px;
-    border: 1px solid $white;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
+ul.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
 
-    &:hover {
-        background-color: $grey-darkest;
-        color: $white;
+    li.title {
+        font-size: 16px;
+        opacity: 1;
+        margin-bottom: 8px;
     }
-}
 
-.modal {
-    padding: 20px;
-    position: fixed;
-    width: 30%;
+    li {
+        opacity: 0.6;
+    }
 }
