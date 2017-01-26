@@ -369,3 +369,11 @@ ul.link-list {
         opacity: 0.6;
     }
 }
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #333;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #333 transparent transparent;
+}
