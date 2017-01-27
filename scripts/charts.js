@@ -330,14 +330,78 @@ function drawColumnChart() {
               slantedTextAngle: 90
           },
           legend: {
-              position: 'in',
-              alignment: 'end'
+              position: 'none'
           },
           height: 420,
           colors: ['#80A953', '#405429']
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('column-esales'));
+        var view = new google.visualization.DataView(data);
+
+        view.setColumns([0,1,2]);
+
+        $('[data-legend]').each(function() {
+            var $this = $(this);
+
+                $this.click(function() {
+                    //Load states
+                    var $b2c = $('[data-legend="b2c"]'),
+                        $b2bg = $('[data-legend="b2bg"]');
+
+                        function atLeastOneActive() {
+                            var activeAmt = 0;
+
+                            if($b2c.hasClass('active')) {
+                                activeAmt++;
+                            }
+                            if($b2bg.hasClass('active')) {
+                                activeAmt++;
+                            }
+
+                            return activeAmt;
+                        }
+
+                    //Switch active states
+                    if($this.data('legend') == 'b2c') {
+                        if($this.hasClass('active') && (atLeastOneActive()-1) > 0) {
+                            $this.removeClass('active');
+                        }
+                        else {
+                            $this.addClass('active');
+                        }
+                    }
+                    else if($this.data('legend') == 'b2bg') {
+                        if($this.hasClass('active') && (atLeastOneActive()-1) > 0) {
+                            $this.removeClass('active');
+                        }
+                        else {
+                            $this.addClass('active');
+                        }
+                    }
+
+                    if($b2c.hasClass('active') && $b2bg.hasClass('active')) {
+                        view.setColumns([0,1,2]);
+                        bar_options.colors = ['#80A953', '#405429'];
+                    }
+                    else if($b2c.hasClass('active') && !$b2bg.hasClass('active')) {
+                        view.setColumns([0,1]);
+                        bar_options.colors = ['#80A953'];
+                    }
+                    else if(!$b2c.hasClass('active') && !$b2bg.hasClass('active')) {
+                        view.setColumns([0]);
+                        bar_options.colors = ['#80A953', '#405429'];
+                    }
+                    else if(!$b2c.hasClass('active') && $b2bg.hasClass('active')) {
+                        view.setColumns([0,2]);
+                        bar_options.colors = ['#405429'];
+                    }
+
+                    chart.draw(view, bar_options);
+                });
+
+
+        });
 
         chart.draw(data, bar_options);
 }

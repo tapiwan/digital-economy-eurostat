@@ -377,3 +377,51 @@ ul.link-list {
 .fp-controlArrow.fp-prev {
     border-color: transparent #333 transparent transparent;
 }
+
+#column-esales g g rect {
+    stroke: none !important;
+}
+
+.legend {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    z-index: 9999;
+
+    .item {
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+
+        .rect {
+            width: 28px;
+            height: 14px;
+            display: inline-block;
+
+            &.rect-b2c {
+                background-color: $grey-light;
+            }
+            &.rect-b2bg {
+                background-color: $grey-light;
+            }
+        }
+
+        .text {
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+        }
+
+        &.active {
+            .rect {
+                &.rect-b2c {
+                    background-color: #80A953;
+                }
+                &.rect-b2bg {
+                    background-color: #405429;
+                }
+            }
+        }
+    }
+}
